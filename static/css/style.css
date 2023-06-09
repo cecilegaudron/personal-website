@@ -24,7 +24,21 @@ section {
     overflow: hidden;
 }
 
+/* Services Page */
+.services-section {
+    background-color: #a52a2a;
+    color: #fff;
+}
 
+.services-title {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.4rem;
+}
+
+.services-list {
+    list-style: square;
+    color: #a52a2a;
+}
 
 /* General styles for text */
 .title-paragraph {
