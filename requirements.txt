@@ -24,8 +24,11 @@ cycler==0.11.0
 debugpy==1.6.7
 decorator==5.1.1
 defusedxml==0.7.1
+dj-database-url==2.0.0
 dj3-cloudinary-storage==0.0.6
 Django==4.2.2
+django-bootstrap-v5==1.0.11
+django-crispy-forms==2.0
 executing==1.2.0
 fastjsonschema==2.16.3
 filelock==3.12.0
@@ -33,6 +36,7 @@ fonttools==4.39.3
 fqdn==1.5.1
 gitdb==4.0.10
 GitPython==3.1.31
+gunicorn==20.1.0
 idna==3.4
 ipykernel==6.22.0
 ipython==8.12.0
@@ -97,6 +101,7 @@ plotly==5.14.1
 prometheus-client==0.16.0
 prompt-toolkit==3.0.38
 psutil==5.9.5
+psycopg2==2.9.6
 ptyprocess==0.7.0
 pure-eval==0.2.2
 pycparser==2.21
