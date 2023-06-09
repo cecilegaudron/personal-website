@@ -5,15 +5,11 @@
 
 {% block content %}
 
-<!-- first section with picture and tagline -->
-<section class="first-section services-title">
+<article>
     <div id="title-block">
-        <h2 class="sub-title-block">my</h2>
-        <h2>SERVICES</h2>
+        <h1 class="sub-title-block">my
+            SERVICES</h>
     </div>
-</section>
-<!-- section with txt -->
-<article class="services-txt">
     <h2 class="title-section">Take up the challenge</h2>
     <br>
     <p>It has become essential to have a website as part of its professional or associative activity. To be present on
@@ -29,175 +25,89 @@
         a communication strategy designed to reach the target audience.
         <br>
         <br>
-        Don't worry, it's not that complicated! It is necessary <a href="index.html#contact" class="internal-link">to
+        Don't worry, it's not that complicated! It is necessary <a href="{% url 'contact' %}" class="internal-link">to
             turn to a professional</a> who will be able to accompany you and help you in this work. I could be that
-        person, <a href="about.html" class="internal-link">learn more about me.</a>
+        person, <a href="{% url 'about' %}" class="internal-link">learn more about me.</a>
     </p>
 </article>
 <!-- different services section -->
-<section class="services-skills">
+<section>
     <h2 class="title-section">What I can do </h2><br>
     <h2 class="sub-title-block">for you</h2>
-    <div class="div-services">
-        <div class="different-services">
-            <h2 class="title-paragraph">Website creation</h2>
-            <ul>
-                <li>Creation with HTML5/CSS3</li>
-                <li>Webdesign</li>
-                <li>Responsive design</li>
-                <li>Creation with Wordpress</li>
-                <li>Website redesign</li>
-            </ul>
-        </div>
-        <div class="different-services">
-            <h2 class="title-paragraph">Digital services</h2>
-            <ul>
-                <li>Social networks management</li>
-                <li>SEO referencing</li>
-                <li>Gips maps realization</li>
-                <li>Image optimization</li>
-                <li>Digital watch</li>
-            </ul>
-        </div>
-        <div class="different-services">
-            <h2 class="title-paragraph">Visual identity</h2>
-            <ul>
-                <li>Graphic charter creation</li>
-                <li>Realization of visuals</li>
-                <li>Documents layout</li>
-                <li>Printing follow-up</li>
-                <li>Graphic chain knowledge</li>
-            </ul>
-        </div>
-        <div class="different-services">
-            <h2 class="title-paragraph">Other devices</h2>
-            <ul>
-                <li>Communication strategy</li>
-                <li>Content writing</li>
-                <li>SEO referencing</li>
-                <li>Shooting</li>
-                <li>Content correction</li>
-            </ul>
+    <!-- Web Development services -->
+    <div class="services-section">
+        <h3 class="services-title">Web Development</h3>
+        <ul>
+            <li><i class="fa-solid fa-expand"></i> Creating a website from A to Z</li>
+            <li><i class="fa-solid fa-expand"></i> Frameworks : Django & Bootstrap</li>
+            <li><i class="fa-solid fa-expand"></i> Languages : HTML5, CSS3, Python, Javascript</li>
+            <li><i class="fa-solid fa-expand"></i> Using the Agile environment</li>
+        </ul>
+    </div>
+    <!-- Website Creation services -->
+    <div class="services-section">
+        <h3 class="services-title">Website creation & Redesign</h3>
+        <ul>
+            <li>Webdesign</li>
+            <li>Responsive design</li>
+            <li>Creation with Wordpress</li>
+            <li>Website redesign</li>
+        </ul>
+    </div>
+    <!-- Tab with services -->
+    <!-- https://getbootstrap.com/docs/4.0/components/navs/#javascript-behavior -->
+    <div>
+        <h2>And also...</h2>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link" id="digital-tab" data-toggle="tab" href="#digital" role="tab"
+                    aria-controls="digital" aria-selected="false">Digital Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" id="identity-tab" data-toggle="tab" href="#identity" role="tab"
+                    aria-controls="identity" aria-selected="false">Visual Identity</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="other-tab" data-toggle="tab" href="#other" role="tab" aria-controls="other"
+                    aria-selected="false">Other devices</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <!-- Digital Devices tab -->
+            <div class="tab-pane fade" id="digital" role="tabpanel" aria-labelledby="digital-tab">
+                <h3>Digital services</h3>
+                <ul>
+                    <li>Social networks management</li>
+                    <li>SEO referencing</li>
+                    <li>Gips maps realization</li>
+                    <li>Image optimization</li>
+                    <li>Digital watch</li>
+                </ul>
+            </div>
+            <!-- Visual Identity tab -->
+            <div class="tab-pane fade show active" id="identity" role="tabpanel" aria-labelledby="identity-tab">
+                <h3>Visual identity</h3>
+                <ul>
+                    <li>Graphic charter creation</li>
+                    <li>Realization of visuals</li>
+                    <li>Documents layout</li>
+                    <li>Printing follow-up</li>
+                    <li>Graphic chain knowledge</li>
+                </ul>
+            </div>
+            <!-- Other Devices tab -->
+            <div class="tab-pane fade" id="other" role="tabpanel" aria-labelledby="other-tab">
+                <h3>Other devices</h3>
+                <ul>
+                    <li>Communication strategy</li>
+                    <li>Content writing</li>
+                    <li>SEO referencing</li>
+                    <li>Shooting</li>
+                    <li>Content correction</li>
+                </ul>
+            </div>
         </div>
     </div>
 </section>
 
-<h1>My Services</h1>
-
-<ul class="nav nav-tabs" id="myTab" role="tablist">
-    <li class="nav-item">
-        <a class="nav-link active" id="development-tab" data-toggle="tab" href="#development" role="tab"
-            aria-controls="development" aria-selected="true">Web Development</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
-            aria-selected="false">Website Creation</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
-            aria-selected="false">Contact</a>
-    </li>
-</ul>
-<div class="tab-content" id="myTabContent">
-    <div class="tab-pane fade show active" id="development" role="tabpanel" aria-labelledby="development-tab">content
-        developement</div>
-    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
-</div>
-
-<ul class="nav nav-tabs">
-    <li class="nav-item">
-        <a class="nav-link active" href="#">Web Development</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link active" href="#">Website Creation</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">Digital Services</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">Visual Identity</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">Other devices</a>
-    </li>
-</ul>
 {% endblock %}
-
-
-<!-- first section with picture and tagline -->
-<section class="first-section services-title">
-    <div id="title-block">
-        <h2 class="sub-title-block">my</h2>
-        <h2>SERVICES</h2>
-    </div>
-</section>
-<!-- section with txt -->
-<article class="services-txt">
-    <h2 class="title-section">Take up the challenge</h2>
-    <br>
-    <p>It has become essential to have a website as part of its professional or associative activity. To be present on
-        the net allows to inform these potential customers of these services, of these coordinates as well as of these
-        prices.
-        <br>
-        <br>
-        A website allows to be contacted but also to give the possibility of making a reservation on line or to sell
-        these products.
-        <br>
-        <br>
-        A website does not go without a logo, a graphic charter, possibly social networks. It is necessary to establish
-        a communication strategy designed to reach the target audience.
-        <br>
-        <br>
-        Don't worry, it's not that complicated! It is necessary <a href="index.html#contact" class="internal-link">to
-            turn to a professional</a> who will be able to accompany you and help you in this work. I could be that
-        person, <a href="about.html" class="internal-link">learn more about me.</a>
-    </p>
-</article>
-<!-- different services section -->
-<section class="services-skills">
-    <h2 class="title-section">What I can do </h2><br>
-    <h2 class="sub-title-block">for you</h2>
-    <div class="div-services">
-        <div class="different-services">
-            <h2 class="title-paragraph">Website creation</h2>
-            <ul>
-                <li>Creation with HTML5/CSS3</li>
-                <li>Webdesign</li>
-                <li>Responsive design</li>
-                <li>Creation with Wordpress</li>
-                <li>Website redesign</li>
-            </ul>
-        </div>
-        <div class="different-services">
-            <h2 class="title-paragraph">Digital services</h2>
-            <ul>
-                <li>Social networks management</li>
-                <li>SEO referencing</li>
-                <li>Gips maps realization</li>
-                <li>Image optimization</li>
-                <li>Digital watch</li>
-            </ul>
-        </div>
-        <div class="different-services">
-            <h2 class="title-paragraph">Visual identity</h2>
-            <ul>
-                <li>Graphic charter creation</li>
-                <li>Realization of visuals</li>
-                <li>Documents layout</li>
-                <li>Printing follow-up</li>
-                <li>Graphic chain knowledge</li>
-            </ul>
-        </div>
-        <div class="different-services">
-            <h2 class="title-paragraph">Other devices</h2>
-            <ul>
-                <li>Communication strategy</li>
-                <li>Content writing</li>
-                <li>SEO referencing</li>
-                <li>Shooting</li>
-                <li>Content correction</li>
-            </ul>
-        </div>
-    </div>
-</section>
