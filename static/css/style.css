@@ -41,50 +41,6 @@ section {
     text-transform: uppercase;
 }
 
-/* Header with logo and navigation */
-header {
-    width: 100%;
-}
-
-#logo {
-    background-color: #fff;
-    margin: auto;
-    width: 30%;
-}
-
-nav {
-    background-color: #fff;
-    padding: 2px;
-    max-width: 100%;
-}
-
-nav ul {
-    text-align: center
-}
-
-nav li {
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 1.3rem;
-    list-style-type: none;
-    text-transform: uppercase;
-    display: inline-block;
-    margin: 2%;
-}
-
-nav a {
-    color: #000;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: brown;
-    text-decoration: none;
-}
-
-.active {
-    border-bottom: 1px solid #000;
-}
-
 /* Contact form */
 .contact-form {
     background-color: brown;
