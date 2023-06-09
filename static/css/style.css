@@ -1,14 +1,10 @@
 /* import fonts from fonts google */
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Raleway:wght@300&family=Satisfy&display=swap');
 
+/* General styles */
 * {
     margin: 0;
     padding: 0;
-}
-
-body {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.2rem;
 }
 
 img {
@@ -16,12 +12,34 @@ img {
     height: auto;
 }
 
+section {
+    overflow: hidden;
+    margin: 2%;
+}
+
+/* Text styles */
+h1 {
+    font-family: 'Fjalla One', sans-serif;
+}
+
 h2 {
     font-family: 'Fjalla One', sans-serif;
 }
 
-section {
-    overflow: hidden;
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+}
+
+/* Links styles */
+a {
+    color: #a52a2a;
+    font-weight: bold;
+}
+
+a:hover, a:active {
+    color: #000;
+    text-decoration: underline;
 }
 
 /* Services Page */
@@ -38,6 +56,19 @@ section {
 .services-list {
     list-style: square;
     color: #a52a2a;
+}
+
+.nav-item {
+    font-size: 1.1rem;
+}
+
+.nav-item a {
+    color: #000;
+}
+
+.nav-item a:hover,
+.nav-item a:active {
+    color: #a52a2a
 }
 
 /* General styles for text */
@@ -76,7 +107,9 @@ section {
     margin: auto;
 }
 
-input[type=text], input[type=email], textarea {
+input[type=text],
+input[type=email],
+textarea {
     height: 10%;
     width: 70%;
     padding: 2%;
@@ -123,7 +156,7 @@ input[type=text], input[type=email], textarea {
     background-color: rgba(0, 0, 0, 0.2);
     margin: 0;
     padding: 3%;
-    
+
     left: 30%;
     top: 50%;
     position: absolute;
@@ -224,7 +257,7 @@ input[type=text], input[type=email], textarea {
     transform: translate(-50%, -50%);
 }
 
-.services-section > p {
+.services-section>p {
     padding: 2%;
     color: #fff;
 }
@@ -283,6 +316,7 @@ input[type=text], input[type=email], textarea {
 .services-skills .title-section {
     margin: 5%;
 }
+
 .services-skills {
     background-color: brown;
     max-width: 100%;
@@ -334,7 +368,7 @@ input[type=text], input[type=email], textarea {
     background-size: cover;
     background-position: right;
 }
-    
+
 .about-title #title-block {
     width: 50%;
     left: 44%;
@@ -380,7 +414,7 @@ input[type=text], input[type=email], textarea {
 /* picture and hobbies section */
 .about-hobbies .title-section {
     color: brown;
-} 
+}
 
 .about-hobbies {
     margin: auto;
@@ -414,7 +448,7 @@ input[type=text], input[type=email], textarea {
 .about-hobbies .title-section {
     padding-top: 8%;
 }
-    
+
 /* spotify reader */
 .about-spotify {
     margin: auto;
@@ -478,7 +512,7 @@ input[type=text], input[type=email], textarea {
     }
 
     #contact-ways {
-        margin:1%;
+        margin: 1%;
         padding: 1%;
     }
 
@@ -532,11 +566,11 @@ input[type=text], input[type=email], textarea {
     }
 
     .about-spotify iframe {
-    width: 40%;
-    border-radius: 40px;
-}
+        width: 40%;
+        border-radius: 40px;
+    }
 
-/* Services page */
+    /* Services page */
     .service-title #title-block {
         width: 35%;
         left: 55%;
@@ -546,7 +580,7 @@ input[type=text], input[type=email], textarea {
         padding: 4%;
     }
 
-   .internal-link a {
+    .internal-link a {
         color: brown;
         font-weight: bold;
     }
@@ -555,6 +589,7 @@ input[type=text], input[type=email], textarea {
         color: brown;
         font-weight: bold;
     }
+
     .internal-link a:hover {
         color: #000;
         font-weight: bold;
@@ -602,7 +637,7 @@ input[type=text], input[type=email], textarea {
         left: 70%;
         top: 50%;
     }
-    
+
     /* Home Page section Experiences */
     .experiences {
         margin: auto;
@@ -638,14 +673,15 @@ input[type=text], input[type=email], textarea {
     .contact-form {
         padding: 1%;
     }
-    
+
     .contact-button {
         padding: 1.2%;
         margin: auto;
         font-size: 1rem;
     }
-    
-    input[type=text], input[type=email] {
+
+    input[type=text],
+    input[type=email] {
         height: 5%;
         width: 40%;
         padding: 1%;
@@ -668,7 +704,7 @@ input[type=text], input[type=email], textarea {
     .about-title #title-block {
         width: 20%;
         left: 70%;
-        top:60%;
+        top: 60%;
     }
 
     .about-txt {
@@ -724,10 +760,10 @@ input[type=text], input[type=email], textarea {
         padding: 2%;
         line-height: 1.5rem
     }
-        
+
     .different-services .title-paragraph {
-            padding-bottom: 8%;
-            padding-top: 4%;
+        padding-bottom: 8%;
+        padding-top: 4%;
     }
 
     .services-skills .sub-title-block {
