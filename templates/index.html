@@ -3,139 +3,60 @@
 
 {% block content %}
 
-{% endblock %}
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of CÉcile Gaudron, Full Stack Software Developer in training">
-    <meta name="keywords" content="full stack software developer, HTML, CSS, Gitpod, Github, Development, web languages, website creation">
-    <meta name="author" content="CÉcile Gaudron">
-    <title>Welcome on my portfolio - CÉcile Gaudron</title>
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
-</head>
-<body>
-    <!-- header with logo and nav -->
-    <header>
-        <div id="logo">
-            <a href="#"><img src="assets/images/logo-cecile.png" alt="logo CÉcile white dragonfly in round"></a>
-        </div>
-    <!-- navigation -->
-        <nav>
-            <ul>
-                <li>
-                    <a href="#" class="active">Home</a>
-                </li>
-                <li>
-                    <a href="services.html">Services</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="index.html#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <!-- first section with picture and tagline -->
-    <section class="first-section hp-title">
-        <div id="title-block">
-            <h2>WEB<br>
+<!-- first section with picture and tagline -->
+<section class="first-section hp-title">
+    <div id="title-block">
+        <h2>WEB<br>
             projects</h2>
-            <h2 class="sub-title-block">management</h2>
-        </div>
-    </section>
-    <!-- section with txt experiences -->
-    <section class="hp-experiences">
-        <div class="div-experiences">
+        <h2 class="sub-title-block">management</h2>
+    </div>
+</section>
+<!-- section with txt experiences -->
+<section class="hp-experiences">
+    <div class="div-experiences">
         <h2 class="title-section">My experiences</h2>
-        <p>Thanks to my experiences, whether professional or associative, I am able to create your website, to advise you on your communication strategy and its realization.</p>
-            <div class="experiences">
-                <div>
-                    <h2 class="title-paragraph">Website Conception</h2>
-                    <uL>
-                        <li><strong>Full Stack Development Student</strong></li>
-                        <li>HTML5 - CSS3</li>
-                        <li>Website creation and redesign</li>
-                        <li>Webdesign</li>
-                        <li>Seo optimization</li>
-                    </uL>
-                </div>
-                <div>
-                    <h2 class="title-paragraph">Digital Strategy</h2>
-                    <ul>
-                        <li><strong>Over 10 years of experience</strong></li>
-                        <li>Thinking how to communicate</li>
-                        <li>Visual identity</li>
-                        <li>Content writing</li>
-                        <li>Social networks management</li>
-                    </ul>
-                </div>
+        <p>Thanks to my experiences, whether professional or associative, I am able to create your website, to advise
+            you on your communication strategy and its realization.</p>
+        <div class="experiences">
+            <div>
+                <h2 class="title-paragraph">Website Conception</h2>
+                <uL>
+                    <li><strong>Full Stack Development Student</strong></li>
+                    <li>HTML5 - CSS3</li>
+                    <li>Website creation and redesign</li>
+                    <li>Webdesign</li>
+                    <li>Seo optimization</li>
+                </uL>
+            </div>
+            <div>
+                <h2 class="title-paragraph">Digital Strategy</h2>
+                <ul>
+                    <li><strong>Over 10 years of experience</strong></li>
+                    <li>Thinking how to communicate</li>
+                    <li>Visual identity</li>
+                    <li>Content writing</li>
+                    <li>Social networks management</li>
+                </ul>
             </div>
         </div>
-    </section>
-    <!-- section with services text -->
-    <article class="hp-services">
-            <div class="services-section">
-                <h2 class="title-section">Services</h2>
-                <p>Defining a web strategy is essential to deploy a website in line with your needs. Creating a website is both a schematization of your desires and your needs, and a translation to the technical tools necessary for its proper implementation.<br><br>
-                For that, it is necessary to realize a practical interface and faithful to your visual identity. This last one must be displayed perfectly on the various screens, and in particular on the mobiles which represent more than half of the world connections.  In order to give visibility to all this work, the mastery of SEO tools is an absolute necessity. <br>
-                </p>
-                <div class="button-section">
-                    <a href="services.html">Read more</a>
-                </div>
+    </div>
+</section>
+<!-- section with services text -->
+<article class="hp-services">
+    <div class="services-section">
+        <h2 class="title-section">Services</h2>
+        <p>Defining a web strategy is essential to deploy a website in line with your needs. Creating a website is both
+            a schematization of your desires and your needs, and a translation to the technical tools necessary for its
+            proper implementation.<br><br>
+            For that, it is necessary to realize a practical interface and faithful to your visual identity. This last
+            one must be displayed perfectly on the various screens, and in particular on the mobiles which represent
+            more than half of the world connections. In order to give visibility to all this work, the mastery of SEO
+            tools is an absolute necessity. <br>
+        </p>
+        <div class="button-section">
+            <a href="services.html">Read more</a>
         </div>
-    </article>
-    <!-- contact form -->
-    <section class="contact-form" id="contact">
-        <div id="form-div">
-            <h2 class="title-section">Contact me</h2>
-            <h2 class="title-paragraph">Contact me via this form</h2>
-            <hr>
-            <form action="https://www.codeinstitute.net/" method="POST" target="_parent">
-                <label for="name">Your name</label><br>
-                <input id="name" name="name" type="text" required><br>
-                <label for="email">Your email</label><br>
-                <input id="email" name="email" type="email" required><br>
-                <input id="website-creation" name="contact-type" value="website-creation" type="radio" required>
-                <label for="website-creation">Website creation</label><br>
-                <input id="website-redesign" name="contact-type" value="website-redesign" type="radio">
-                <label for="website-redesign">Website redesign</label><br>
-                <input id="website-device" name="contact-type" value="website-device" type="radio">
-                <label for="website-device">Devices</label><br>
-                <label for="message">Your message</label><br>
-                <textarea id="message" name="message" required=""></textarea><br>
-                <input class="contact-button" type="submit" value="Send the message!">
-            </form>
-        </div>
-        <div id="contact-ways">
-            <h2 class="title-paragraph">Or via these other ways</h2>
-            <div id="contact-options">
-                <p><i class="fa-solid fa-paper-plane"></i><br>By email <br> <a href="mailto:emailme.kfpey@simplelogin.com">emailme.kfpey@simplelogin.com</a></p>
-                <p><i class="fa-solid fa-phone"></i><br>By phone <br> <a href="tel:+49157315487589">01573 15487589</a></p>
-                <p><i class="fa-solid fa-comments"></i><br>Face-to-face <br> meeting in Berlin</p>
-            </div>
-        </div>
-    </section>
-    <!-- footer -->
-    <footer>
-        <div>
-            <span>
-                <a href="https://www.linkedin.com/in/cecilegaudron/" target="_blank" rel="noopener" aria-label="Visit my LinkedIn account"><i class="fa-brands fa-linkedin"></i></a>
-            </span>
-            <span>
-                <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Visit my Instagram account"><i class="fa-brands fa-square-instagram"></i></a>
-            </span>
-            </div>
-        <div>© CÉcile - 2022</div>
-    </footer>
-    <!-- font awesome script -->
-    <script src="https://kit.fontawesome.com/3ee526735d.js" crossorigin="anonymous"></script>
-</body>
-</html>
+    </div>
+</article>
+
+{% endblock %}
