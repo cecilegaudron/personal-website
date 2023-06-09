@@ -9,44 +9,46 @@
     <div class="container navbar w-100 bg-white">
         <div class="mx-auto fixed">
             <a href="{% url 'index' %}">
-                <img class="img-fluid col-lg-4 mx-auto" alt="CÉcile Gaudron logo"
+                <img class="img-fluid col-6 col-lg-4 mx-auto" alt="CÉcile Gaudron logo"
                     src="https://res.cloudinary.com/di8utbjhc/image/upload/v1686303474/portfolio/logo-cecile_rq1pcl.webp">
             </a>
             <p class="logo-txt">CÉcile Gaudron <i class="fa-solid fa-code"></i> Full Stack Developer</p>
         </div>
         <!-- Menu for desktop -->
-        <div class="vertical-txt menu">
-            <li>
-                <a href="#">HEY</a>
-            </li>
-            <li>
-                <a href="services.html">SERVICES</a>
-            </li>
-            <li>
-                <a href="about.html">ABOUT</a>
-            </li>
-            <li>
-                <a href="contact.html">CONTACT</a>
-            </li>
-        </div>
-        <div class="menu">
-            <hr>
-            <li>
-                <p class="languages">LANGUAGES</p>
-            </li>
-            <li>
-                <a href="#">EN</a>
-            </li>
-            <li>
-                <a href="#">FR</a>
-            </li>
-            <hr>
-            <li>
-                <a href="#"><i class="fa-brands fa-square-github"></i></a>
-            </li>
-            <li>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            </li>
+        <div class="desktop-menu">
+            <div class="vertical-txt menu">
+                <li>
+                    <a href="{% url 'index' %}">AHOY</a>
+                </li>
+                <li>
+                    <a href="{% url 'services' %}">SERVICES</a>
+                </li>
+                <li>
+                    <a href="{% url 'about' %}">ABOUT</a>
+                </li>
+                <li>
+                    <a href="{% url 'contact' %}">CONTACT</a>
+                </li>
+            </div>
+            <div class="menu">
+                <hr>
+                <li>
+                    <p class="languages">LANGUAGES</p>
+                </li>
+                <li>
+                    <a href="#">EN</a>
+                </li>
+                <li>
+                    <a href="#">FR</a>
+                </li>
+                <hr>
+                <li>
+                    <a href="#"><i class="fa-brands fa-square-github"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+            </div>
         </div>
         <!-- Hamburger menu icon -->
         <div class="toggle_btn">
@@ -54,28 +56,35 @@
         </div>
     </div>
     <!-- Responsive menu -->
-    <div class="dropdown_menu">
+    <div class="dropdown_menu menu">
         <li>
-            <a href="#" class="products_menu">Vegetables</a>
+            <a href="{% url 'index' %}">AHOY</a>
         </li>
         <li>
-            <a href="#" class="products_menu">Fruits</a>
+            <a href="{% url 'services' %}">SERVICES</a>
         </li>
         <li>
-            <a href="#" class="products_menu">Other Products</a>
+            <a href="{% url 'about' %}">ABOUT</a>
         </li>
-        <!-- Split dropright button -->
-        <li class="shopping-content">
-            <div class="btn-group dropright">
-                <a class="nav-link d-block d-lg-none dropright shopping_txt" href="#"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fas fa-user fa-lg shopping_icon"></i> Account
-                </a>
-                <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    <span class="sr-only">Toggle Dropright</span>
-                </button>
-            </div>
+        <li>
+            <a href="{% url 'contact' %}">CONTACT</a>
+        </li>
+        <hr>
+        <li>
+            <p class="languages">LANGUAGES</p>
+        </li>
+        <li>
+            <a href="#">EN</a>
+        </li>
+        <li>
+            <a href="#">FR</a>
+        </li>
+        <hr>
+        <li>
+            <a href="#"><i class="fa-brands fa-square-github"></i></a>
+        </li>
+        <li>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
         </li>
     </div>
 </header>
