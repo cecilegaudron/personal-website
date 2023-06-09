@@ -1,0 +1,21 @@
+footer {
+    background-color: black;
+    max-width: 100%;
+    color: #fff;
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+    padding: 5%;
+    line-height: 2rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+}
+
+footer a:hover {
+    color:rgba(250, 55, 55, 0.6);
+}
