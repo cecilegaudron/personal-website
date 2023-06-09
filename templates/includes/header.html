@@ -7,89 +7,62 @@
 <header>
     <!-- Responsive navbar code from the video https://www.youtube.com/watch?v=GdrbE-s5DgQ -->
     <div class="container navbar w-100 bg-white">
-        <div class="row col-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-            <a href="{% url 'home' %}">
-                <img class="img-fluid logo plg-2 w-100" alt="Les Jardins logo"
-                    src="https://res.cloudinary.com/dcymco5tc/image/upload/v1685196376/media/logo-lesjardins_uig9io.webp">
+        <div class="mx-auto fixed">
+            <a href="{% url 'index' %}">
+                <img class="img-fluid col-lg-4 mx-auto" alt="CÉcile Gaudron logo"
+                    src="https://res.cloudinary.com/di8utbjhc/image/upload/v1686303474/portfolio/logo-cecile_rq1pcl.webp">
             </a>
+            <p class="logo-txt">CÉcile Gaudron <i class="fa-solid fa-code"></i> Full Stack Developer</p>
         </div>
-        <!-- Products menu -->
-        <div class="row col-lg-6 col-xl-7" >
-            <ul class="links">
-                <li>
-                    <a href="{% url 'products' %}?category=vegetables,herbs" class="products_menu">Vegetables
-                        <i class="fa-solid fa-carrot menu_icon"></i></a>
-                </li>
-                <li>
-                    <a href="{% url 'products' %}?category=fruits" class="products_menu">Fruits
-                        <i class="fa-solid fa-apple-whole menu_icon"></i></a>
-                </li>
-                <li>
-                    <a href="{% url 'products' %}?category=grocery,dry_vegetables,plants_seeds"
-                        class="products_menu">Other Products
-                        <i class="fa-solid fa-jar menu_icon"></i></a>
-                </li>
-            </ul>
+        <!-- Menu for desktop -->
+        <div class="vertical-txt menu">
+            <li>
+                <a href="#">HEY</a>
+            </li>
+            <li>
+                <a href="services.html">SERVICES</a>
+            </li>
+            <li>
+                <a href="about.html">ABOUT</a>
+            </li>
+            <li>
+                <a href="contact.html">CONTACT</a>
+            </li>
         </div>
-        <!-- Account and shopping bag -->
-        <div class="shopping row col-lg-3">
-            <a class="nav-link d-block dropdown shopping_txt txt-right" href="#" 
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-user fa-lg shopping_icon"></i> Account
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                {% if request.user.is_authenticated %}
-                {% if request.user.is_superuser %}
-                <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
-                {% endif %}
-                <a href="" class="dropdown-item">My Profile</a>
-                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-                {% else %}
-                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-                {% endif %}
-            </div>
-            <!-- Shopping Bag -->
-            <a class="{% if grand_total %}{% else %}text-black{% endif %} nav-link d-block shopping_txt"
-                href="{% url 'view_bag' %}">
-                <i class="fa-solid fa-basket-shopping shopping_icon"></i>
-                {% if grand_total %}
-                {{ grand_total|floatformat:2 }} €
-                {% else %}
-                0.00 €
-                {% endif %}
-            </a>
+        <div class="menu">
+            <hr>
+            <li>
+                <p class="languages">LANGUAGES</p>
+            </li>
+            <li>
+                <a href="#">EN</a>
+            </li>
+            <li>
+                <a href="#">FR</a>
+            </li>
+            <hr>
+            <li>
+                <a href="#"><i class="fa-brands fa-square-github"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
         </div>
         <!-- Hamburger menu icon -->
         <div class="toggle_btn">
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars-staggered"></i>
         </div>
     </div>
     <!-- Responsive menu -->
     <div class="dropdown_menu">
         <li>
-            <a href="{% url 'products' %}?category=vegetables,herbs" class="products_menu">Vegetables
-                <i class="fa-solid fa-carrot menu_icon"></i></a>
+            <a href="#" class="products_menu">Vegetables</a>
         </li>
         <li>
-            <a href="{% url 'products' %}?category=fruits" class="products_menu">Fruits
-                <i class="fa-solid fa-apple-whole menu_icon"></i></a>
+            <a href="#" class="products_menu">Fruits</a>
         </li>
         <li>
-            <a href="{% url 'products' %}?grocery,dry_vegetables,plants_seeds" class="products_menu">Other Products
-                <i class="fa-solid fa-jar menu_icon"></i></a>
-        </li>
-        <hr class="w-80">
-        <li class="shopping-content">
-            <a class="{% if grand_total %}{% else %}text-black{% endif %} nav-link d-block d-lg-none shopping_txt"
-                href="{% url 'view_bag' %}">
-                <i class="fa-solid fa-basket-shopping shopping_icon"></i>
-                {% if grand_total %}
-                {{ grand_total|floatformat:2 }} €
-                {% else %}
-                0.00 €
-                {% endif %}
-            </a>
+            <a href="#" class="products_menu">Other Products</a>
         </li>
         <!-- Split dropright button -->
         <li class="shopping-content">
@@ -102,25 +75,7 @@
                     aria-haspopup="true" aria-expanded="false">
                     <span class="sr-only">Toggle Dropright</span>
                 </button>
-                <div class="dropdown-menu">
-                    <!-- Dropdown menu links -->
-                    {% if request.user.is_authenticated %}
-                    {% if request.user.is_superuser %}
-                    <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
-                    {% endif %}
-                    <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                    <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-                    {% else %}
-                    <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                    <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-                    {% endif %}
-                </div>
             </div>
-        </li>
-        <li class="shopping-content">
-            <a href="{% url 'contact' %}" class="shopping_txt">
-                Contact us
-            </a>
         </li>
     </div>
 </header>
