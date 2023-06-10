@@ -1,55 +1,30 @@
-{% extends "base.html" %}
-{% load static %}
-
 {% block content %}
-<section>
+<section id="contact-form">
     <div class="container">
         <h2>Contact me</h2>
         <p>Blabla text de contact</p>
-        <h3>Contact me via this form</h3>
+        <p>Contact me via this form:</p>
         <div class="mb-3">
             <label for="input-name" class="form-label">Your name</label>
-            <input type="name" class="form-control" id="input-name" placeholder="name@example.com">
-          </div>
+            <input type="name" class="form-control" id="input-name" placeholder="name@example.com" required>
+        </div>
         <div class="mb-3">
             <label for="input-email" class="form-label">Your email address</label>
-            <input type="email" class="form-control" id="input-email" placeholder="name@example.com">
-          </div>
-          <div class="mb-3">
-            <label for="input-message" class="form-label">Your message</label>
+            <input type="email" class="form-control" id="input-email" placeholder="name@example.com" required>
+        </div>
+        <input id="website-creation" name="contact-type" value="website-creation" type="checkbox" required>
+        <label for="website-creation">Website creation</label><br>
+        <input id="website-redesign" name="contact-type" value="website-redesign" type="checkbox">
+        <label for="website-redesign">Website redesign</label><br>
+        <input id="website-device" name="contact-type" value="website-device" type="checkbox">
+        <label for="website-device">Devices</label><br>
+        <div class="mb-3">
+            <label for="input-message" class="form-label" required>Your message</label>
             <textarea class="form-control" id="input-message" rows="3"></textarea>
-          </div>
+        </div>
+        <button>Send your message</button>
+        <p>Faire une page de email successful sent</p>
     </div>
 </section>
 
-<section class="contact-form" id="contact">
-    <div id="form-div">
-        <h2 class="title-section">Contact me</h2>
-        <h2 class="title-paragraph">Contact me via this form</h2>
-        <hr>
-        <form action="https://www.codeinstitute.net/" method="POST" target="_parent">
-            <label for="name">Your name</label><br>
-            <input id="name" name="name" type="text" required><br>
-            <label for="email">Your email</label><br>
-            <input id="email" name="email" type="email" required><br>
-            <input id="website-creation" name="contact-type" value="website-creation" type="radio" required>
-            <label for="website-creation">Website creation</label><br>
-            <input id="website-redesign" name="contact-type" value="website-redesign" type="radio">
-            <label for="website-redesign">Website redesign</label><br>
-            <input id="website-device" name="contact-type" value="website-device" type="radio">
-            <label for="website-device">Devices</label><br>
-            <label for="message">Your message</label><br>
-            <textarea id="message" name="message" required=""></textarea><br>
-            <input class="contact-button" type="submit" value="Send the message!">
-        </form>
-    </div>
-    <div id="contact-ways">
-        <h2 class="title-paragraph">Or via these other ways</h2>
-        <div id="contact-options">
-            <p><i class="fa-solid fa-paper-plane"></i><br>By email <br> <a href="mailto:emailme.kfpey@simplelogin.com">emailme.kfpey@simplelogin.com</a></p>
-            <p><i class="fa-solid fa-phone"></i><br>By phone <br> <a href="tel:+49157315487589">01573 15487589</a></p>
-            <p><i class="fa-solid fa-comments"></i><br>Face-to-face <br> meeting in Berlin</p>
-        </div>
-    </div>
-
-{% endblock %}
+    {% endblock %}

@@ -45,7 +45,6 @@ a:active {
 
 /* Services Page */
 #services-first {
-    background-image: url("https://res.cloudinary.com/di8utbjhc/image/upload/v1686303474/portfolio/siegessaule_dgycxt.webp");
     background-color:#a52a2a;
     width: 100%;
     height: 100%;
@@ -199,21 +198,7 @@ textarea {
     position: relative;
 }
 
-.hp-title {
-    background: url('../images/bunker-holga.jpg') no-repeat center center;
-}
-
-
 /* Home page second section w txt */
-.hp-experiences {
-    width: 100%;
-    height: auto;
-    background-color: brown;
-    text-align: center;
-    overflow: hidden;
-    margin: auto;
-}
-
 .experiences {
     display: flex;
     flex-direction: column;
@@ -223,34 +208,9 @@ textarea {
     padding: 3%;
 }
 
-.hp-experiences .title-paragraph {
-    padding-top: 5%;
-}
-
-.hp-experiences ul {
-    text-align: left;
-    color: #fff;
-    list-style-type: square;
-    list-style-position: inside;
-}
-
-.div-experiences {
-    margin: auto;
-    width: auto;
-    padding: 6%;
-}
-
-.div-experiences p {
-    padding: 3%;
-    color: #fff;
-    text-align: justify;
-}
-
-
 /* Home page third section services */
 .hp-services {
     width: 100%;
-    background: url('../images/church-holga.jpg') no-repeat;
     overflow: hidden;
     height: 600px;
     position: relative;
@@ -299,8 +259,6 @@ textarea {
 
 /* picture and title section */
 .services-title {
-    background: url('../images/siegessaule.jpg') no-repeat center center;
-    background-size: cover;
     background-position: top;
 }
 
@@ -377,7 +335,6 @@ textarea {
 
 /* picture and title section */
 .about-title {
-    background: url('../images/swing.jpg') no-repeat center center;
     background-size: cover;
     background-position: right;
 }
@@ -659,14 +616,6 @@ textarea {
         justify-content: space-around;
         width: 80%;
         padding: 2%;
-    }
-
-    .div-experiences {
-        padding: 2%;
-    }
-
-    .div-experiences p {
-        padding: 1%;
     }
 
     /* Home Page section Services */

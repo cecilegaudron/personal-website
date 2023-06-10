@@ -4,29 +4,30 @@
 {% block content %}
 
 <!-- first section with picture and tagline -->
-<section class="first-section hp-title">
+<section class="first-section">
+    <img src="https://res.cloudinary.com/di8utbjhc/image/upload/v1686303474/portfolio/bunker-holga_grzjfh.webp"
+        alt="Bunker photo" class="center w-100">
     <div id="title-block">
-        <h2>WEB<br>
-            projects</h2>
-        <h2 class="sub-title-block">management</h2>
+        <h1>WEB<br>
+            projects
+        <span class="sub-title-block">management</span></h1>
     </div>
 </section>
 <!-- section with txt experiences -->
-<section class="hp-experiences">
-    <div class="div-experiences">
+<section>
+    <div>
         <h2 class="title-section">My experiences</h2>
         <p>Thanks to my experiences, whether professional or associative, I am able to create your website, to advise
             you on your communication strategy and its realization.</p>
         <div class="experiences">
             <div>
                 <h2 class="title-paragraph">Website Conception</h2>
-                <uL>
-                    <li><strong>Full Stack Development Student</strong></li>
-                    <li>HTML5 - CSS3</li>
-                    <li>Website creation and redesign</li>
-                    <li>Webdesign</li>
-                    <li>Seo optimization</li>
-                </uL>
+                <ul>
+                    <li><strong>Full Stack Development Graduate (2023 - Code Institute)</strong></li>
+                    <li>Frameworks Django - Bootstrap</li>
+                    <li>Languages HTML5 - CSS3 - Python - JavaScript</li>
+                    <li>SEO optimization</li>
+                </ul>
             </div>
             <div>
                 <h2 class="title-paragraph">Digital Strategy</h2>
@@ -35,6 +36,7 @@
                     <li>Thinking how to communicate</li>
                     <li>Visual identity</li>
                     <li>Content writing</li>
+                    <li>Website creation & admin with CMS</li>
                     <li>Social networks management</li>
                 </ul>
             </div>
@@ -42,7 +44,7 @@
     </div>
 </section>
 <!-- section with services text -->
-<article class="hp-services">
+<article>
     <div class="services-section">
         <h2 class="title-section">Services</h2>
         <p>Defining a web strategy is essential to deploy a website in line with your needs. Creating a website is both
@@ -58,5 +60,7 @@
         </div>
     </div>
 </article>
+
+{% include 'contact.html' %}
 
 {% endblock %}
