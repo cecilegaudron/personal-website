@@ -18,16 +18,16 @@
         <div class="desktop-menu">
             <div class="vertical-txt menu">
                 <li>
-                    <a href="{% url 'index' %}">AHOY</a>
+                    <a href="{% url 'index' %}" class="menu-desk">AHOY</a>
                 </li>
                 <li>
-                    <a href="{% url 'services' %}">SERVICES</a>
+                    <a href="{% url 'services' %}" class="menu-desk">SERVICES</a>
                 </li>
                 <li>
-                    <a href="{% url 'about' %}">ABOUT</a>
+                    <a href="{% url 'about' %}" class="menu-desk">ABOUT</a>
                 </li>
                 <li>
-                    <a href="{% url 'contact' %}">CONTACT</a>
+                    <a href="{% url 'contact' %}" class="menu-desk">CONTACT</a>
                 </li>
             </div>
             <div class="menu">
@@ -36,17 +36,17 @@
                     <p class="languages">LANGUAGES</p>
                 </li>
                 <li>
-                    <a href="#">EN</a>
+                    <a href="#" class="menu-desk">EN</a>
                 </li>
                 <li>
-                    <a href="#">FR</a>
+                    <a href="#" class="menu-desk">FR</a>
                 </li>
                 <hr>
                 <li>
-                    <a href="#"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="#" class="menu-desk"><i class="fa-brands fa-square-github"></i></a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="menu-desk"><i class="fa-brands fa-linkedin"></i></a>
                 </li>
             </div>
         </div>
@@ -58,33 +58,28 @@
     <!-- Responsive menu -->
     <div class="dropdown_menu menu">
         <li>
-            <a href="{% url 'index' %}">AHOY</a>
+            <a href="{% url 'index' %}" class="menu-mobile">AHOY</a>
         </li>
         <li>
-            <a href="{% url 'services' %}">SERVICES</a>
+            <a href="{% url 'services' %}" class="menu-mobile">SERVICES</a>
         </li>
         <li>
-            <a href="{% url 'about' %}">ABOUT</a>
+            <a href="{% url 'about' %}" class="menu-mobile">ABOUT</a>
         </li>
         <li>
-            <a href="{% url 'contact' %}">CONTACT</a>
+            <a href="{% url 'contact' %}" class="menu-mobile">CONTACT</a>
         </li>
         <hr>
         <li>
             <p class="languages">LANGUAGES</p>
         </li>
         <li>
-            <a href="#">EN</a>
-        </li>
-        <li>
-            <a href="#">FR</a>
+            <a href="#" class="menu-mobile">EN </a> | <a href="#" class="menu-mobile"> FR</a>
         </li>
         <hr>
         <li>
-            <a href="#"><i class="fa-brands fa-square-github"></i></a>
-        </li>
-        <li>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" class="menu-mobile"><i class="fa-brands fa-square-github"></i> </a> |
+            <a href="#" class="menu-mobile"><i class="fa-brands fa-linkedin"></i> </a>
         </li>
     </div>
 </header>

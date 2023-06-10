@@ -23,23 +23,20 @@ header {
     transform-origin: left top 0;
 }
 
-.menu {
+.menu-desk {
     font-family: 'Fjalla One', sans-serif;
     text-transform: uppercase;
     font-size: 1.4rem;
-}
-
-.menu a {
     text-decoration: none;
     color: #000;
 }
 
-.menu a:hover {
+.menu-desk a:hover {
     text-decoration: none;
     color: #a52a2a;
 }
 
-.menu a:active {
+.menu-desk a:active {
     border-bottom: 1px solid #000;
 }
 
@@ -83,7 +80,7 @@ li {
     width: 100%;
     overflow: hidden;
     border-radius: 10px;
-    background-color: #fffafa;
+    background-color: #a52a2a;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     z-index: 99999;
 }
@@ -98,7 +95,23 @@ li {
 .dropdown_menu.open {
     height: fit-content;
     width: 100%;
-    height: 100%;
+}
+
+.menu-mobile {
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.menu-mobile a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.menu-mobile a:active {
+    border-bottom: 1px solid #000;
 }
 
 /* Dropdown menu for account */
