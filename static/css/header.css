@@ -95,7 +95,8 @@ li {
 
 .dropdown_menu.open {
     height: fit-content;
-    width: 100%;
+    max-width: fit-content;
+    padding: 8% 20% 4% 20%;
 }
 
 .menu-mobile {
@@ -142,7 +143,6 @@ li {
 @media (max-width: 576px) {
     .dropdown_menu {
         left: 2rem;
-        /*width: unset;*/
     }
 }
 
