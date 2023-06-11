@@ -5,13 +5,43 @@
 {% endblock %}
 
 <footer>
-
- 
-    </section>
+    <div class="container">
+        <div class="row">
+            <div class=" col-8 left">
+                <ul>
+                    <li>
+                        <h2>Pages</h2>
+                    </li>
+                    <li><a href="{% url 'index' %}">Ahoy</a></li>
+                    <li><a href="{% url 'services' %}">My services</a></li>
+                    <li><a href="{% url 'about' %}">About me</a></li>
+                    <li><a href="{% url 'services' %}#work">My Work</a></li>
+                    <li><a href="{% url 'index' %}#contact-form">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-4 right">
+                <ul>
+                    <li>
+                        <h2>Follow me</h2>
+                    </li>
+                    <li>
+                        <a href="https://github.com/cecilegaudron" target="_blank" rel="noopener"
+                            aria-label="Visit my GitHub account>"><i class="fa-brands fa-github"></i></a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="https://www.linkedin.com/in/cecilegaudron" target="_blank" rel="noopener"
+                            aria-label="Visit my LinkedIn account>"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <!-- Copyright -->
     <div>
         © {% now 'Y' %}<br>
-        Created by CÉcile <a href="https://github.com/cecilegaudron/" target="_blank" rel="noopener" aria-label="Visit my GitHub account>"><i class="fa-brands fa-github"></i></a></p><br>
-        <a href="https://www.privacypolicygenerator.info/live.php?token=5wXhzvlMcnTpFj7LohuincImAdadxGA3" target="_blank" rel="noopener" aria-label="See our Privacy Policy">METTRE LES Privacy Policy</a>
+        Created by <strong>CÉcile</strong></p><br>
+        <a href="https://www.privacypolicygenerator.info/live.php?token=5wXhzvlMcnTpFj7LohuincImAdadxGA3"
+            target="_blank" rel="noopener" aria-label="See our Privacy Policy">METTRE LES Privacy Policy</a>
     </div>
-  </footer>
+</footer>
