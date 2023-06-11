@@ -10,15 +10,16 @@
 img {
     width: 100%;
     height: auto;
+    background-color: #a52a2a;
 }
 
 section, article {
-    max-width: 100%;
     overflow: hidden;
+    padding: 2%;
 }
 
-body {
-    max-width: 100%;
+.separator-red {
+    color: #a52a2a;
 }
 
 /* Text styles */
@@ -39,10 +40,17 @@ h2 {
 
 .title-handwritten {
     font-family: 'Satisfy', cursive !important;
+    padding: 2%;
+    font-weight: bolder;
+}
+
+.title-handwritten h1 {
     font-size: 3rem !important;
     color: #fff;
-    text-align: right;
-    padding: 2%;
+}
+
+.title-handwritten h2 {
+    font-size: 2rem !important;
 }
 
 /* Links styles */
@@ -70,10 +78,11 @@ a:active {
     right: 5%;
     bottom: 13%;
     position: absolute;
+    text-align: right;
 }
 
 #title-image {
-    width: 100%;
+    max-width: 100%;
     overflow: hidden;
     position: relative;
 }
@@ -82,8 +91,16 @@ a:active {
     height: 65vh;
 }
 
-#title {
+#title-section {
+    max-width: 100% !important;
+    padding: 0 !important;
     margin-bottom: 6%;
+}
+
+/* Home page */
+.block-red {
+    background-color: #a52a2a;
+    color: #FFF;
 }
 
 /* Services Page */
