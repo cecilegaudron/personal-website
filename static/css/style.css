@@ -13,22 +13,36 @@ img {
 }
 
 section, article {
+    max-width: 100%;
     overflow: hidden;
-    margin: 4%;
+}
+
+body {
+    max-width: 100%;
 }
 
 /* Text styles */
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+}
+
 h1 {
     font-family: 'Fjalla One', sans-serif;
+    font-size: 3rem;
+    color: #FFF;
 }
 
 h2 {
     font-family: 'Fjalla One', sans-serif;
 }
 
-body {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.2rem;
+.title-handwritten {
+    font-family: 'Satisfy', cursive !important;
+    font-size: 3rem !important;
+    color: #fff;
+    text-align: right;
+    padding: 2%;
 }
 
 /* Links styles */
@@ -44,27 +58,6 @@ a:active {
 }
 
 /* Services Page */
-#services-first {
-    background-color:#a52a2a;
-    width: 100%;
-    height: 100%;
-}
-
-.services-section {
-    background-color: #a52a2a;
-    color: #fff;
-}
-
-.services-title {
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 1.4rem;
-}
-
-.services-list {
-    list-style: square;
-    color: #a52a2a;
-}
-
 .services-tab-text {
     font-size: 1.1rem;
     font-weight: bold;
@@ -83,21 +76,6 @@ a:active {
     color: #a52a2a;
 }
 
-/* General styles for text */
-.title-paragraph {
-    color: #fff;
-    font-size: 2rem;
-    text-align: center;
-    font-family: 'Satisfy', cursive !important;
-}
-
-.title-section {
-    color: #fff;
-    font-size: 3.5rem;
-    text-align: center;
-    text-transform: uppercase;
-}
-
 /* Contact form */
 .contact-form {
     background-color: brown;
@@ -108,58 +86,7 @@ a:active {
     padding: 4%;
 }
 
-#form-div {
-    margin: 2%;
-}
-
-.contact-button {
-    text-align: center;
-    text-transform: uppercase;
-    padding: 2%;
-    margin: auto;
-}
-
-input[type=text],
-input[type=email],
-textarea {
-    height: 10%;
-    width: 70%;
-    padding: 2%;
-    margin: 2%;
-}
-
-#contact-ways {
-    margin: 2%;
-    padding: 4%;
-}
-
-#contact-options {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-
-#contact-options p {
-    padding: 4%;
-}
-
-#contact-options i {
-    font-size: 2rem;
-}
-
-#contact-options a {
-    color: #FFF;
-    text-decoration: underline;
-}
-
-#contact-options a:hover {
-    color: #000;
-}
-
 /* Home page styles */
-
-/* Home page first section with picture and title */
 /* Code from the Love Running project. Attributes and values for the picture */
 #title-block {
     width: 60%;
@@ -169,567 +96,35 @@ textarea {
     margin: 0;
     padding: 3%;
 
-    left: 30%;
-    top: 50%;
+    right: 5%;
+    bottom: 13%;
     position: absolute;
-}
-
-#title-block h2 {
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 4rem;
-    color: #fff;
-    text-align: right;
-    padding: 2%;
-}
-
-.sub-title-block {
-    font-family: 'Satisfy', cursive !important;
-    font-size: 3rem !important;
-    color: #fff;
-    text-align: right;
-    padding: 2%;
 }
 
 /* Code from the Love Running project. Attributes and values for the picture */
-.first-section {
+#image-title {
     width: 100%;
-    height: 600px;
     overflow: hidden;
     position: relative;
 }
 
-/* Home page second section w txt */
-.experiences {
-    display: flex;
-    flex-direction: column;
-}
-
-.experiences div {
-    padding: 3%;
-}
-
-/* Home page third section services */
-.hp-services {
-    width: 100%;
-    overflow: hidden;
-    height: 600px;
-    position: relative;
-}
-
-/* Code from w3schools.com */
-.services-section {
-    margin: 0;
-    padding: 2%;
-    width: 90%;
-    height: auto;
-    text-align: justify;
-    background-color: rgba(0, 0, 0, 0.3);
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-}
-
-.services-section>p {
-    padding: 2%;
-    color: #fff;
-}
-
-.button-section {
-    background-color: brown;
-    width: 40%;
-    margin: auto;
-    padding: 3%;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.button-section a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.button-section a:hover {
-    color: #FFF;
-    text-decoration: underline;
-    font-weight: bolder;
-}
-
-/* Services Page */
-
-/* picture and title section */
-.services-title {
-    background-position: top;
-}
-
-.services-title #title-block {
-    width: 50%;
-    left: 40%;
-    top: 60%;
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-/* text section */
-.services-txt {
-    max-width: 100%;
-    height: auto;
-    background-color: #fff;
-    margin: auto;
-    padding: 6%;
-    text-align: justify;
-}
-
-.services-txt .title-section {
-    color: #000;
-}
-
-/* services skills section */
-.services-skills .title-section {
-    margin: 5%;
-}
-
-.services-skills {
-    background-color: brown;
-    max-width: 100%;
-    height: auto;
-    margin: auto;
-    padding-top: 10%;
-}
-
-.services-skills .sub-title-block {
-    text-align: center;
-    padding-bottom: 8%;
-}
-
-.services-skills h2 {
-    line-height: 1.3rem;
-    margin: 1% !important;
-}
-
-.div-services {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.different-services {
-    width: 60%;
-    margin: 3%;
-    padding: 5%;
-    background-color: #FFF;
-    line-height: 1.5rem;
-}
-
-.different-services .title-paragraph {
-    color: brown;
-    padding: 4%;
-}
-
-.different-services ul {
-    list-style-type: square;
-    list-style-position: inside;
-    text-align: left;
-}
-
-/* About page */
-
-/* picture and title section */
-.about-title {
-    background-size: cover;
-    background-position: right;
-}
-
-.about-title #title-block {
-    width: 50%;
-    left: 44%;
-    top: 65%;
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-/* background section */
-.about-txt {
-    margin: auto;
-    padding: 6%;
-    text-align: justify;
-}
-
-.about-txt .title-section {
-    color: brown;
-}
-
-/* skills section */
-.about-skills {
-    margin: auto;
-    padding: 6%;
-    background-color: brown;
-}
-
-.different-skills {
-    margin: auto;
-    padding: 6%;
-    display: flex;
-    flex-direction: column;
-}
-
-.different-skills span {
-    color: #FFF;
-    padding: 2%;
-    display: inline-block;
-}
-
-.different-skills div {
-    padding: 2%;
-}
-
-/* picture and hobbies section */
-.about-hobbies .title-section {
-    color: brown;
-}
-
-.about-hobbies {
-    margin: auto;
-    padding: 4%;
-}
-
-#profile-picture {
-    margin: auto;
-}
-
-#profile-picture img {
-    width: 50%;
-    border-radius: 50%;
-    margin: auto;
-    display: block;
-}
-
-.different-hobbies {
-    margin: auto;
-    text-align: center;
-}
-
-.hobbies {
-    padding: 6%;
-}
-
-.hobbies i {
-    font-size: 4rem;
-}
-
-.about-hobbies .title-section {
-    padding-top: 8%;
-}
-
-/* spotify reader */
-.about-spotify {
-    margin: auto;
-    padding: 4%;
-    width: 80%;
-}
-
-.about-spotify iframe {
-    margin: auto;
-    display: block;
-    border-radius: 12px;
+#image-title img {
+    height: 65vh;
 }
 
 /* Media Queries */
-
 /* For large phones */
 @media only screen and (min-width: 576px) {
-    #logo {
-        width: 20%;
-    }
-
-    #profile-picture img {
-        width: 30%;
-    }
+    
 }
+
 
 /* For tablets */
 @media only screen and (min-width: 768px) {
-    #logo {
-        width: 15%;
-    }
 
-    /* Home Page */
-    .hp-title {
-        background-size: cover;
-        height: 700px;
-    }
-
-    #title-block {
-        width: 40%;
-        height: auto;
-        left: 50%;
-        top: 55%;
-    }
-
-    .hp-services {
-        overflow: hidden;
-        height: 500px;
-        background-size: cover;
-    }
-
-    .button-section {
-        width: 25%;
-        margin: auto;
-        padding: 2%;
-    }
-
-    #contact-options {
-        display: flex;
-        flex-flow: wrap;
-    }
-
-    #contact-ways {
-        margin: 1%;
-        padding: 1%;
-    }
-
-    /* About page */
-    .about-title #title-block {
-        width: 30%;
-        left: 60%;
-    }
-
-    .about-txt {
-        padding: 4%;
-    }
-
-    .about-skills {
-        padding: 3%;
-    }
-
-    .different-skills {
-        padding: 2%;
-        flex-direction: row;
-        text-align: center;
-        justify-content: center;
-        line-height: 2rem;
-    }
-
-    .about-hobbies {
-        padding: 2%;
-    }
-
-    .about-hobbies .title-section {
-        padding-top: 4%;
-    }
-
-    #profile-picture img {
-        width: 30%;
-    }
-
-    .different-hobbies {
-        padding-top: 2%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .different-hobbies div {
-        width: 80%
-    }
-
-    .hobbies i {
-        padding-bottom: 4%;
-    }
-
-    .about-spotify iframe {
-        width: 40%;
-        border-radius: 40px;
-    }
-
-    /* Services page */
-    .service-title #title-block {
-        width: 35%;
-        left: 55%;
-    }
-
-    .services-txt {
-        padding: 4%;
-    }
-
-    .internal-link a {
-        color: brown;
-        font-weight: bold;
-    }
-
-    .internal-link a:visited {
-        color: brown;
-        font-weight: bold;
-    }
-
-    .internal-link a:hover {
-        color: #000;
-        font-weight: bold;
-    }
-
-    .services-skills {
-        padding-top: 4%;
-    }
-
-    .services-skills .title-section {
-        margin: 3%;
-    }
-
-    .services-skills h2 {
-        line-height: 2rem;
-    }
-
-    .services-skills .sub-title-block {
-        padding-bottom: 4%;
-    }
-
-    .different-services {
-        width: 50%;
-        margin: 2%;
-        padding: 3%;
-    }
 }
 
 /* For desks */
 @media only screen and (min-width: 992px) {
-    #logo {
-        width: 12%;
-    }
-
-    /* Home page first section */
-    .hp-title {
-        background-size: cover;
-        background-position: top center;
-        height: 700px;
-    }
-
-    #title-block {
-        width: 20%;
-        height: auto;
-        left: 70%;
-        top: 50%;
-    }
-
-    /* Home Page section Experiences */
-    .experiences {
-        margin: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 80%;
-        padding: 2%;
-    }
-
-    /* Home Page section Services */
-    .button-section {
-        width: 15%;
-        margin: auto;
-        padding: 1.2%;
-    }
-
-    .hp-services {
-        overflow: hidden;
-        height: 400px;
-        background-size: cover;
-    }
-
-    /* Home Page section Contact */
-    .contact-form {
-        padding: 1%;
-    }
-
-    .contact-button {
-        padding: 1.2%;
-        margin: auto;
-        font-size: 1rem;
-    }
-
-    input[type=text],
-    input[type=email] {
-        height: 5%;
-        width: 40%;
-        padding: 1%;
-        margin: 1%;
-        font-size: 1rem;
-    }
-
-    #contact-ways {
-        margin: 1%;
-        padding: 1%;
-    }
-
-    #contact-options {
-        display: flex;
-        flex-flow: wrap;
-        justify-content: space-between;
-    }
-
-    /* About Page */
-    .about-title #title-block {
-        width: 20%;
-        left: 70%;
-        top: 60%;
-    }
-
-    .about-txt {
-        padding: 3%;
-    }
-
-    .about-skills {
-        padding: 2%;
-    }
-
-    /* About Page picture and hobbies section */
-    #profile-picture img {
-        width: 20%;
-    }
-
-    .hobbies {
-        padding: 2%;
-        line-height: 2.2rem;
-    }
-
-    .about-hobbies .title-section {
-        padding-top: 3%;
-    }
-
-    .different-hobbies div {
-        width: 80%
-    }
-
-    .about-spotify {
-        padding: 1%;
-    }
-
-    /* Services Page */
-    .services-title #title-block {
-        width: 25%;
-        left: 65%
-    }
-
-    .services-txt {
-        padding: 3%;
-    }
-
-    .services-skills {
-        padding-top: 2%;
-    }
-
-    .div-services {
-        flex-direction: row;
-        align-items: normal;
-    }
-
-    .different-services {
-        padding: 2%;
-        line-height: 1.5rem
-    }
-
-    .different-services .title-paragraph {
-        padding-bottom: 8%;
-        padding-top: 4%;
-    }
-
-    .services-skills .sub-title-block {
-        padding: 1%;
-    }
-
+    
 }
