@@ -9,16 +9,24 @@
     <div class="container navbar w-100 bg-white">
         <div class="mx-auto fixed">
             <a href="{% url 'index' %}">
-                <img class="img-fluid col-6 col-lg-4 mx-auto bg-white" alt="CÉcile Gaudron logo"
-                    src="https://res.cloudinary.com/di8utbjhc/image/upload/v1686303474/portfolio/logo-cecile_rq1pcl.webp">
+                <div>
+                    <img class="img-fluid col-6 col-lg-4 mx-auto bg-white" alt="CÉcile Gaudron logo"
+                        src="https://res.cloudinary.com/di8utbjhc/image/upload/v1686303474/portfolio/logo-cecile_rq1pcl.webp">
+                </div>
+                <div>
+                    <p class="logo-txt"><i class="fa-solid fa-code"></i> Full Stack Developer</p>
+                </div>
             </a>
-            <p class="logo-txt">CÉcile Gaudron <i class="fa-solid fa-code"></i> Full Stack Developer</p>
         </div>
+        <!-- Hamburger menu icon -->
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars-staggered"></i>
+        </div>        
         <!-- Menu for desktop -->
         <div class="desktop-menu">
             <div class="vertical-txt menu">
                 <li>
-                    <a href="{% url 'index' %}" class="menu-desk">AHOY</a>
+                    <a href="{% url 'index' %}" class="menu-desk"><i class="fa-solid fa-house-chimney"></i></a>
                 </li>
                 <li>
                     <a href="{% url 'services' %}" class="menu-desk">SERVICES</a>
@@ -31,10 +39,6 @@
                 </li>
             </div>
             <div class="menu">
-                <hr>
-                <li>
-                    <p class="languages">LANGUAGES</p>
-                </li>
                 <li>
                     <a href="#" class="menu-desk">EN</a>
                 </li>
@@ -50,15 +54,11 @@
                 </li>
             </div>
         </div>
-        <!-- Hamburger menu icon -->
-        <div class="toggle_btn">
-            <i class="fa-solid fa-bars-staggered"></i>
-        </div>
     </div>
     <!-- Responsive menu -->
     <div class="dropdown_menu menu">
         <li>
-            <a href="{% url 'index' %}" class="menu-mobile">AHOY</a>
+            <a href="{% url 'index' %}" class="menu-mobile"><i class="fa-solid fa-house-chimney"></i></a>
         </li>
         <li>
             <a href="{% url 'services' %}" class="menu-mobile">SERVICES</a>
@@ -68,10 +68,6 @@
         </li>
         <li>
             <a href="{% url 'index' %}#contact-form" class="menu-mobile">CONTACT</a>
-        </li>
-        <hr>
-        <li>
-            <p class="languages">LANGUAGES</p>
         </li>
         <li>
             <a href="#" class="menu-mobile">EN </a> | <a href="#" class="menu-mobile"> FR</a>
