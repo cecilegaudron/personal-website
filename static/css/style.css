@@ -1,5 +1,5 @@
 /* import fonts from fonts google */
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Raleway:wght@300&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto:wght@300;400&family=Satisfy&display=swap');
 
 /* General styles */
 * {
@@ -33,7 +33,7 @@ section, article {
 }
 /* Text styles */
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
 }
 
