@@ -26,8 +26,8 @@
             <div class="block-red p-3">
                 <h3 class="title-handwritten">Website Conception</h3>
                 <ul>
-                    <li><strong>Full Stack Developer Graduate</strong><br>
-                        <em>(2023 - Code Institute)</em>
+                    <li><strong>Full Stack Developer Graduate - E-commerce specialization</strong><br>
+                        <em>(2023 - <a href="https://codeinstitute.net/de/" target="blank" aria-label="Visit the Code Institude website">Code Institute</a>)</em>
                     </li>
                     <li><i class="fa-solid fa-expand"></i> Frameworks <strong>Django</strong> -
                         <strong>Bootstrap</strong>
@@ -44,8 +44,9 @@
                 <ul>
                     <li><strong>Over 10 years of experience</strong></li>
                     <li><i class="fa-solid fa-expand"></i> Thinking </strong>how to communicate</strong></li>
-                    <li><i class="fa-solid fa-expand"></i> <strong>Visual identity</strong></li>
-                    <li><i class="fa-solid fa-expand"></i> <strong>Content writing</strong></li>
+                    <li><i class="fa-solid fa-expand"></i> <strong>Web Marketing</strong></li>
+                    <li><i class="fa-solid fa-expand"></i> Visual identity</li>
+                    <li><i class="fa-solid fa-expand"></i> Content writing</li>
                     <li><i class="fa-solid fa-expand"></i> Website creation & admin with CMS</li>
                     <li><i class="fa-solid fa-expand"></i> Social networks management</li>
                 </ul>
@@ -64,7 +65,7 @@
             proper implementation.<br><br>
             For that, it is necessary to realize a <strong>practical interface</strong> and <strong>faithful to your
                 visual identity</strong>. This last
-            one must be displayed perfectly on the various screens> with the <strong>responsive design</strong>, and in
+            one must be displayed perfectly on the various screens with the <strong>responsive design</strong>, and in
             particular on the mobiles which represent
             more than half of the world connections. In order to give visibility to all this work, the mastery of
             <strong>SEO
@@ -77,42 +78,13 @@
         </div>
     </div>
 </article>
-<hr class="separator-red col-6 mx-auto">
-<article>
-    <div>
-        <h2>About Me</h2>
-        <p>It's important to have <strong>confidence in the person</strong> to whom you entrust the creation of your
-            website. To do this, I need to introduce myself to you and explain my background.
-            Without going into too much detail right away, I've been working in communication <strong>for over 10
-                years</strong>. <br>
-            I love this field, I love <strong>helping people to communicate</strong> their business and pass on their
-            passion through their website.
-        </p>
-        <div>
-            <a href="{% url 'about' %}"><i class="fa-solid fa-arrow-up-right-from-square"></i> Know more about me and my
-                background</a>
-        </div>
-    </div>
-</article>
-<hr class="separator-red col-6 mx-auto">
-<article>
-    <div>
-        <h2>My Work</h2>
-        <p>For more than 10 years, I've been creating self-taught websites with the help of Wordpress. For several
-            months now, I've been able to build a site from A to Z <strong>using high-performance, secure and optimized
-                tools</strong><br>
-            I'd be delighted to <strong>discuss your project with you</strong>. I'll be happy to put forward my ideas,
-            integrating your
-            wishes and vision.
-        </p>
-        <div>
-            <a href="{% url 'services' %}#work"><i class="fa-solid fa-arrow-up-right-from-square"></i> Take a look at my
-                work</a>
-        </div>
-    </div>
-</article>
-<hr class="separator-red col-6 mx-auto">
 
+<!-- About page content -->
+{% include 'about.html' %}
+
+<hr class="separator-red col-6 mx-auto">
+<img src="https://res.cloudinary.com/di8utbjhc/image/upload/v1701627087/personal-website/beach_dao6gf.webp" alt="picture of a beach in Normandy with Holga">
+<!-- Contact page content -->
 {% include 'contact.html' %}
 
 {% endblock %}
