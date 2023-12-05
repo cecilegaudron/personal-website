@@ -74,6 +74,12 @@ a:active {
     text-decoration: underline;
 }
 
+.link-white {
+    color: #FFF;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 /* Title and picture section styles */
 /* Code from the Love Running project. Attributes and values for the picture */
 #title-block {
@@ -106,13 +112,12 @@ a:active {
     margin-bottom: 6%;
 }
 
-/* Home page */
+/* Skills Area */
 .block-red {
     background-color: #a52a2a;
     color: #FFF;
 }
 
-/* Services Page */
 .services-tab-text {
     font-size: 1.1rem;
     font-weight: bold;
@@ -131,7 +136,7 @@ a:active {
     color: #a52a2a;
 }
 
-/* About page */
+/* About Area */
 .hobbies-list li {
     list-style-type: square !important;
 }
