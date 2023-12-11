@@ -5,74 +5,50 @@
 {% endblock %}
 
 <header>
-    <!-- Responsive navbar code from the video https://www.youtube.com/watch?v=GdrbE-s5DgQ -->
-    <div class="container navbar w-100 bg-white">
-        <div class="mx-auto fixed">
-            <a href="{% url 'index' %}">
-                <div>
-                    <img class="img-fluid col-6 col-lg-4 mx-auto bg-white" alt="CÉcile Gaudron logo"
-                        src="https://res.cloudinary.com/di8utbjhc/image/upload/v1686303474/portfolio/logo-cecile_rq1pcl.webp">
-                </div>
-                <div>
-                    <p class="logo-txt"><i class="fa-solid fa-code"></i> Full Stack Developer</p>
-                </div>
-            </a>
-        </div>
-        <!-- Hamburger menu icon -->
-        <div class="toggle_btn">
-            <i class="fa-solid fa-bars-staggered"></i>
-        </div>        
-        <!-- Menu for desktop -->
-        <div class="desktop-menu">
-            <div class="vertical-txt menu">
-                <li>
-                    <a href="{% url 'index' %}" class="menu-desk"><i class="fa-solid fa-house-chimney"></i></a>
-                </li>
-                <li>
-                    <a href="{% url 'index' %}#about-section" class="menu-desk">ABOUT</a>
-                </li>
-                <li>
-                    <a href="{% url 'index' %}#contact-form" class="menu-desk">CONTACT</a>
-                </li>
+    <div class="container w-100">
+        <!-- Logo -->
+        <nav class="navbar navbar-dark sticky-top" id="menu">
+            <div class="col-10">
+                <a href="{% url 'index' %}">
+                    <div>
+                        <img class="img-fluid mx-auto bg-white col-6" alt="CÉcile Gaudron logo"
+                            src="https://res.cloudinary.com/di8utbjhc/image/upload/v1686303474/portfolio/logo-cecile_rq1pcl.webp">
+                    </div>
+                    <div>
+                        <p class="logo-txt col-10"><i class="fa-solid fa-code"></i> Full Stack Developer</p>
+                    </div>
+                </a>
             </div>
-            <div class="menu">
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler col-2" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <i class="fa-solid fa-bars-staggered text-dark" id="bars"></i>
+            </button>
+            <!-- Navbar links in collapse menu -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul>
                 <li>
-                    <a href="#" class="menu-desk">EN</a>
+                    <a href="{% url 'index' %}" class="menu-mobile"><i class="fa-solid fa-house-chimney"></i></a>
                 </li>
                 <li>
-                    <a href="#" class="menu-desk">FR</a>
-                </li>
-                <hr>
-                <li>
-                    <a href="#" class="menu-desk"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="{% url 'index' %}#about-section" class="menu-mobile">ABOUT</a>
                 </li>
                 <li>
-                    <a href="#" class="menu-desk"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="{% url 'index' %}#contact" class="menu-mobile">CONTACT</a>
                 </li>
+                <li>
+                    <a href="#" class="menu-mobile small">English </a> | <a href="#" class="menu-mobile small">Français </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-mobile"><i class="fa-brands fa-square-github"></i> </a> 
+                </li>
+                <li>
+                    <a href="#" class="menu-mobile"><i class="fa-brands fa-linkedin"></i> </a>
+                </li>
+            </ul>
             </div>
-        </div>
+        </nav>
     </div>
-    <!-- Responsive menu -->
-    <div class="dropdown_menu menu">
-        <li>
-            <a href="{% url 'index' %}" class="menu-mobile"><i class="fa-solid fa-house-chimney"></i></a>
-        </li>
-        <li>
-            <a href="{% url 'index' %}#about-section" class="menu-mobile">ABOUT</a>
-        </li>
-        <li>
-            <a href="{% url 'index' %}#contact-form" class="menu-mobile">CONTACT</a>
-        </li>
-        <li>
-            <a href="#" class="menu-mobile">EN </a> | <a href="#" class="menu-mobile"> FR</a>
-        </li>
-        <hr>
-        <li>
-            <a href="#" class="menu-mobile"><i class="fa-brands fa-square-github"></i> </a> |
-            <a href="#" class="menu-mobile"><i class="fa-brands fa-linkedin"></i> </a>
-        </li>
-    </div>
-</header>
+  </header>
 
 {% block postloadjs %}
 <script>

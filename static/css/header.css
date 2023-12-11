@@ -10,6 +10,8 @@ header {
     max-width: 100%;
     position: relative;
     padding: 0 2rem;
+    overflow: hidden;
+    z-index: 9999;
 }
 
 /* Logo and text */
@@ -18,139 +20,27 @@ header {
     font-size: 1.4rem;
 }
 
-/* Vertical menu for desktop view */
-.vertical-txt {
-    transform: rotate(90deg);
-    transform-origin: left top 0;
-}
-
-.menu-desk {
+/* Dropdown menu */
+.navbar-collapse {
     font-family: 'Fjalla One', sans-serif;
     text-transform: uppercase;
     font-size: 1.4rem;
     text-decoration: none;
-    color: #000;
-}
-
-.menu-desk a:hover {
-    text-decoration: none;
-    color: #a52a2a;
-}
-
-.menu-desk a:active {
-    border-bottom: 1px solid #000;
-}
-
-.languages {
-    color: #a9a9a9;
-    font-size: 1.2rem;
-}
-
-.fa-code {
-    color: #a52a2a;
-}
-
-.navbar {
-    height: max-content;
-    max-width: 100%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1548;
-}
-
-.navbar .toggle_btn {
-    color: #000;
-    font-size: 1.5rem;
-    cursor: pointer;
-    display: none;
+    align-content: center;
 }
 
 li {
     list-style: none;
 }
 
-/* Dropdown menu */
-.dropdown_menu {
-    display: none;
-    position: absolute;
-    top: 0rem !important;
-    right: 0rem !important;
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
     width: 100%;
-    overflow: hidden;
-    border-radius: 10px;
-    background-color: #a52a2a;
-    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    z-index: 99999;
 }
 
-.dropdown_menu li {
-    padding: 0.3rem;
-    margin: 0.3rem;
-    display: flex;
-    justify-content:center;
-}
-
-.dropdown_menu.open {
-    height: 100%;
-    max-width: 100%;
-}
-
-.menu-mobile {
-    font-family: 'Fjalla One', sans-serif;
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    text-decoration: none;
-    color: #FFF;
-}
-
-.menu-mobile a:hover {
-    text-decoration: none;
-    color: #000;
-}
-
-.menu-mobile a:active {
-    border-bottom: 1px solid #000;
-}
-
-
-/* Media Queries */
-@media (min-width: 992px) {
-    .navbar {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-    }
-
-    .header-container {
-        padding-top: 14%;
-    }
-}
-
-/* Media Queries for menu */
-
-@media (max-width: 768px) {
-    .dropdown_menu {
-        top: 4rem;
-    }
-}
-
-@media (max-width: 992px) {
-    .navbar .toggle_btn {
-        display: block;
-    }
-
-    .dropdown_menu {
-        display: block;
-    }
-
-    .header-container {
-        padding-top: 13%;
-    }
-
-    .desktop-menu {
-        display: none;
-    }
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky+.content {
+    padding-top: 60px;
 }
