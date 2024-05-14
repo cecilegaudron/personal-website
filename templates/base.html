@@ -46,7 +46,7 @@
   {% include 'includes/header.html' %}
 
   <!-- Content for page -->
-  <main class="p-2">
+  <main class>
   {% block content %}
   {% endblock %}
   </main>
@@ -55,7 +55,23 @@
   {% include 'includes/footer.html' %}
 
   <!-- Font awesome script -->
-  <script src="https://kit.fontawesome.com/3ee526735d.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3ee526735d.js" crossorigin="anonymous"></script>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen ?
+                'fa-solid fa-xmark' :
+                'fa-solid fa-bars'
+        }
+    </script>
+
 
 </body>
 
