@@ -35,27 +35,32 @@
         <div>
             <div class="col-12 block-red" id="menu-homepage">
                 <p class="text-center">
-                    <span class="title-handwritten">mes</span>
-                    <span> SERVICES</span>
-                    <span class="title-handwritten">mes</span>
-                    <span> EXPERTISES</span>
+                    <a href="{% url 'services' %}">
+                        <span class="title-handwritten">mes</span>
+                        <span> SERVICES</span>
+                    </a>
+                    <a href="{% url 'projects' %}">
+                        <span class="title-handwritten">mes</span>
+                        <span> EXPERTISES</span>
+                    </a>
                 </p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- About page content -->
-{% include 'about.html' %}
+<section>
+    <div id="about-content">
+        <!-- About page content -->
+        {% include 'about.html' %}
+    </div>
+</section>
 
-<!-- Services page content -->
-{% include 'services.html' %}
-
-<!-- Projects page content -->
-{% include 'projects.html' %}
-
-<img src="https://res.cloudinary.com/di8utbjhc/image/upload/v1701627087/personal-website/beach_dao6gf.webp" alt="picture of a beach in Normandy with Holga">
-<!-- Contact page content -->
-{% include 'contact.html' %}
+<section>
+    <img src="https://res.cloudinary.com/di8utbjhc/image/upload/v1701627087/personal-website/beach_dao6gf.webp" alt="picture of a beach in Normandy with Holga">
+    <!-- Contact page content -->
+    {% include 'contact.html' %}
+</section>
 
 {% endblock %}
+
