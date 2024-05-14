@@ -28,3 +28,9 @@ def services(request):
     Basic view for Services Page
     """
     return render(request, 'services.html', {})
+
+def projects(request):
+    """
+    Basic view for Projects Page
+    """
+    return render(request, 'projects.html', {})
