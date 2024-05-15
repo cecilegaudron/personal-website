@@ -54,6 +54,10 @@ p {
     font-family: 'Fjalla One', sans-serif;
 }
 
+.section-links {
+  color: #FFF !important;
+}
+
 .title-handwritten {
     font-family: 'Satisfy', cursive !important;
     padding: 2%;

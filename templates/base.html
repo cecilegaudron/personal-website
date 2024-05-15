@@ -58,6 +58,7 @@
     <script src="https://kit.fontawesome.com/3ee526735d.js" crossorigin="anonymous"></script>
 
     <script>
+        // Collapse menu
         const toggleBtn = document.querySelector('.toggle_btn')
         const toggleBtnIcon = document.querySelector('.toggle_btn i')
         const dropDownMenu = document.querySelector('.dropdown_menu')
@@ -69,6 +70,19 @@
             toggleBtnIcon.classList = isOpen ?
                 'fa-solid fa-xmark' :
                 'fa-solid fa-bars'
+        }
+
+        // Show services or projects services on HP
+        function showServices(event) {
+            event.preventDefault();
+            document.getElementById('services-content').style.display = 'block';
+            document.getElementById('projects-content').style.display = 'none';
+        }
+        
+        function showProjects(event) {
+            event.preventDefault();
+            document.getElementById('services-content').style.display = 'none';
+            document.getElementById('projects-content').style.display = 'block';
         }
     </script>
 
