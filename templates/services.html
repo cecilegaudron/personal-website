@@ -1,47 +1,136 @@
-{% load static %}
-
-{% block content %}
+{% load static %} 
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/services-projects.css' %}" />
+{% endblock %}
 
 <section id="services-section">
-    <div class="container">
-        <div id="title-block texte-block bottom-0 end-0">
-          <h2 class="text-dark">Services
-              <span class="title-handwritten">me</span>
-          </h2>
-        </div>
-        <div class="block-red mx-center">
-            <h3 class="title-handwritten">Website Conception</h3>
-            <ul>
-                <li><i class="fa-solid fa-expand"></i> <strong>Full Stack Developer Graduate <br>
-                    <em>E-commerce specialization</em></strong><br>
-                    <em>(2023 - <a href="https://codeinstitute.net/de/" target="blank" aria-label="Visit the Code Institude website" class="link-white">Code Institute</a>)</em>
-                    <br>
-                </li>
-                <li><i class="fa-solid fa-expand"></i> Frameworks <strong>Django</strong> -
-                    <strong>Bootstrap</strong>
-                </li>
-                <li><i class="fa-solid fa-expand"></i> <strong>HTML5</strong> - <strong>CSS3</strong> -
-                    <strong>Python</strong> - <strong>JavaScript</strong>
-                </li>
-                <li><i class="fa-solid fa-expand"></i> PostgreSQL
-                </li>
-                <li><i class="fa-solid fa-expand"></i> SEO optimization</li>
-            </ul>
-        </div>
-        <br>
-        <div class="block-red mx-center">
-            <h3 class="title-handwritten">Digital Strategy</h3>
-            <ul>
-                <li><strong>Over 10 years of experience</strong></li>
-                <li><i class="fa-solid fa-expand"></i> Thinking </strong>how to communicate</strong></li>
-                <li><i class="fa-solid fa-expand"></i> <strong>Web Marketing</strong></li>
-                <li><i class="fa-solid fa-expand"></i> Webdesign</li>
-                <li><i class="fa-solid fa-expand"></i> Agile environment</li>
-                <li><i class="fa-solid fa-expand"></i> Content writing</li>
-                <li><i class="fa-solid fa-expand"></i> Website creation & admin with CMS</li>
-            </ul>
-        </div>
+  <div class="container">
+    <div id="title-block texte-block bottom-0 end-0">
+      <h2 class="text-dark">
+        <span class="title-handwritten">mes</span>
+        Services
+      </h2>
     </div>
+    <div class="block-red mx-center services-block">
+      <h3 class="title-handwritten">Conception de site internet</h3>
+      <p>
+        Plusieurs possibilités s'offrent à vous. Il est possible de demander la
+        création d’un site vitrine ou e-commerce, soit avec Wordpress soit en
+        développement pur. Wordpress permet une mise en main plus simple et plus
+        rapide de son site internet. Le développer complètement donne une grande
+        liberté, on a exactement ce que l’on veut ! Dans l’offre de création de
+        site internet, je peux m’occuper seulement d’une certaine partie ou bien
+        prendre le projet en totalité et vous le livrer clé en main.
+      </p>
+    </div>
+    <div class="block-red mx-center services-block">
+      <h3 class="title-handwritten">Stratégie Digitale</h3>
+      <p>
+        Vous souhaitez développer la présence de votre marque ou de votre
+        entreprise sur le net mais vous êtes perdu avec toutes les offres
+        disponibles ? Je suis là pour vous aider ! De part mon expérience
+        professionnelle, je suis à même de vous renseigner sur la stratégie
+        digitale à adopter. Vous aurez alors une idée du genre de site à
+        développer, de quels réseaux sociaux vous avez besoin, du type de
+        contenu à rédiger.
+      </p>
+    </div>
+    <div class="block-red mx-center services-block">
+      <h3 class="title-handwritten">Web Marketing & Référencement</h3>
+      <p>
+        Il y a des choses qui ne s’inventent pas, mais elles s'apprennent et
+        s’apprivoisent ! Le web marketing et le référencement sont de ces
+        sujets. Je suis là pour vous conseiller sur la stratégie la plus
+        appropriée à adopter sur le web et à communiquer avec vos futurs clients
+        digitaux. Enfin, en termes de SEO, je vous donnerai des astuces et des
+        conseils pour que Google ne soit plus un redoutable ennemi mais un
+        fervent allié.
+      </p>
+    </div>
+    <div class="block-red mx-center services-block">
+      <h3 class="title-handwritten">Webdesign</h3>
+      <p>
+        Vous avez déjà un site internet, qui vous convient, mais vous désirez
+        revoir son design ? Je suis apte à réaliser un design moderne, épuré et
+        dans l’air du temps de votre site et que ce dernier soit bien évidemment
+        responsive (adapté à toutes les tailles d’écran). Ensemble, nous allons
+        réfléchir à des couleurs qui sauront s’accorder avec votre identité
+        visuelle, représenter au mieux vos valeurs et vous rendre fier de votre
+        site internet !
+      </p>
+    </div>
+    <div class="block-red mx-center services-block">
+      <h3 class="title-handwritten">Rédaction de contenu</h3>
+      <p>
+        Rédiger n’est pas une de vos compétences ? Ou tout simplement, vous
+        n’avez pas le temps de créer le contenu de votre site web ? Pas de
+        panique, je peux m’en charger ! Rédactrice pendant plusieurs années sur
+        un site de e-commerce, je suis tout à fait qualifiée pour cet exercice
+        de style. Il est également possible de me fournir une trame du contenu
+        que vous souhaitez mettre en ligne afin que je l'optimise pour le web.
+        Il en est de même pour vos images.
+      </p>
+    </div>
+    <div class="block-red mx-center services-block">
+      <h3 class="title-handwritten">Refonte de site web</h3>
+      <p>
+        Vous avez déjà un site mais celui-ci ne vous plait plus ou alors il est
+        démodé ou encore obsolète. Il n’y a pas besoin de tout jeter à la
+        poubelle, seulement de le remettre au goût du jour ! Nouvelle interface
+        graphique, mise à jour du contenu, réorganisation des informations, et
+        le tout est joué, votre site internet peut revenir sur le devant de la
+        toile !
+      </p>
+    </div>
+    <div class="block-red mx-center services-block">
+      <h3 class="title-handwritten">Identité Visuelle</h3>
+      <p>
+        Créer son entreprise n’est pas seulement une histoire administrative. Il
+        s’agit aussi de réaliser une identité visuelle avec un logo et une
+        charte graphique qui pourront se décliner sur tous vos supports de
+        communication. Que ce soit sur des cartes de visite, des flyers, des
+        brochures, des bâches, du packaging ainsi que sur votre site internet et
+        vos réseaux sociaux. Infographiste de formation, je peux vous aider à
+        réaliser une identité visuelle qui saura représenter vos valeurs et
+        votre message afin que vous puissiez l’utiliser à bon escient.
+      </p>
+    </div>
+    <div class="block-red mx-center services-block">
+      <h3 class="title-handwritten">Conseil & Audit</h3>
+      <p>
+        Vous êtes perdu et ne savez pas comment lancer votre entreprise sur
+        internet ? Vous avez déjà un site internet mais il n’est pas optimisé ?
+      </p>
+    </div>
+    <div class="block-red mx-center services-block">
+      <h3 class="title-handwritten">Formation</h3>
+      <p>
+        Pas de panique, lorsque je livre un site internet, je fournis également
+        une formation afin de pouvoir utiliser et mettre à jour son nouvel outil
+        ! Il est également possible de demander une formation sur d’autres
+        outils, sur le management des réseaux sociaux, sur l’utilisation d’un
+        CMS, sur un apprentissage de base de code. Bref, j’adore apprendre de
+        nouvelles techniques et les enseigner à d’autres !
+      </p>
+    </div>
+    <div class="block-red mx-center services-block">
+      <h3 class="title-handwritten">Maintenance</h3>
+      <p>
+        Si vous ne souhaitez pas vous occuper de votre site internet, vérifier
+        que les liens sont toujours opérationnels, que les mises à jour et les
+        tests de sécurité sont optimisés, vous pouvez me confier cette tâche et
+        je peux réaliser la maintenance de votre site internet.
+      </p>
+    </div>
+    <div>
+        <h3 class="title-handwritten">Mes domaines de prédilection</h3>
+        <p>
+            La culture (j’ai travaillé en bibliothèque, j’ai organisé des concerts et des expositions, j’ai optimisé l’intégration d’un logiciel de billetterie à un site internet de collectivité), la santé (je suis passionnée d’alimentation, de naturopathie, de bien-être, de méditation), le mode associatif (j’ai été webmaster d’un fanzine de musiques actuelles durant 10 ans)
+        </p>
+        <p>
+            Vous êtes intéressés par plusieurs prestations et vous désirez me parler de votre projet ? Contactez-moi afin que je puisse évaluer vos besoins et que je puisse réaliser un devis approprié et personnalisé. 
+        </p>
+      </div>
+  </div>
 </section>
 
-{% endblock %}
