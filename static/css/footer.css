@@ -6,6 +6,8 @@ footer {
     margin: auto;
     text-align: center;
     line-height: 2rem;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.4rem;
 }
 
 footer a {
@@ -17,12 +19,13 @@ footer a {
 
 footer a:hover {
     color: #a52a2a;
+    text-decoration: none;
 }
 
 footer i {
     font-size: 2rem;
 }
 
-footer h2 {
-    font-size: 1.4rem;
+.footer-copyright {
+    font-size: 1rem;
 }

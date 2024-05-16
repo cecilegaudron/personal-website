@@ -1,46 +1,47 @@
-{% load static %}
-
-{% block extra_css %}
-<link rel="stylesheet" href="{% static 'css/footer.css' %}">
+{% load static %} {% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/footer.css' %}" />
 {% endblock %}
 
 <footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-7 pt-4">
-                <ul>
-                    <li>
-                        <h2>Pages</h2>
-                    </li>
-                    <li><a href="{% url 'index' %}">Welcome</a></li>
-                    <li><a href="{% url 'services' %}">My services</a></li>
-                    <li><a href="{% url 'projects' %}">My Expertises</a></li>
-                    <li><a href="{% url 'index' %}#about-section">About me</a></li>
-                    <li><a href="{% url 'index' %}#contact-form">Contact</a></li>
-                </ul>
-            </div>
-            <div class="col-4 pt-4">
-                <ul>
-                    <li>
-                        <h2>Follow me</h2>
-                    </li>
-                    <li>
-                        <a href="https://github.com/cecilegaudron" target="_blank" rel="noopener"
-                            aria-label="Visit my GitHub account>"><i class="fa-brands fa-github"></i></a>
-                    </li>
-                    <br>
-                    <li>
-                        <a href="https://www.linkedin.com/in/cecilegaudron" target="_blank" rel="noopener"
-                            aria-label="Visit my LinkedIn account>"><i class="fa-brands fa-linkedin"></i></a>
-                    </li>
-                </ul>
-            </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 pt-4 footer-points">
+        <span class="col-2">
+            <a
+              href="https://github.com/cecilegaudron"
+              target="_blank"
+              rel="noopener"
+              aria-label="Visit my GitHub account"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </span>
+          <span class="col-2">
+            <a
+              href="https://www.linkedin.com/in/cecilegaudron"
+              target="_blank"
+              rel="noopener"
+              aria-label="Visit my LinkedIn account"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </span>
         </div>
+        <div class="col-12 pt-4 footer-points">
+        <ul>
+          <li>
+            <a href="{% url 'index' %}#contact" class="menu-mobile">CONTACT<span class="title-handwritten">me</span></a>
+          </li>
+          <li>
+            <a href="#" class="menu-mobile small">English </a> |
+            <a href="#" class="menu-mobile small">Français </a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <!-- Copyright -->
-    <div>
-        <p>© {% now 'Y' %}<br>
-            Created by <strong>CÉcile</strong>
-        </p>
-    </div>
+  </div>
+  <!-- Copyright -->
+  <div col-12>
+    <p class="footer-copyright">
+      © {% now 'Y' %} - Created by <strong>CÉcile</strong>
+    </p>
+  </div>
 </footer>
