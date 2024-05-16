@@ -1,0 +1,97 @@
+/* import fonts from fonts google */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+/* LINKS for Services and Projects pages */
+#menu-homepage {
+  padding: 2%;
+}
+
+.section-links {
+  color: #FFF !important;
+}
+
+.section-links a, a:visited {
+  text-decoration: none;
+}
+
+.section-links a:hover, a:active {
+  color: #000 !important;
+  text-decoration: none;
+}
+
+/* SERVICES PAGE */
+.services-block {
+  margin-bottom: 20px;
+  padding: 2%
+}
+
+.services-tab-text {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* PROJECTS PAGE */
+.projects-block {
+    background-color: #FFF;
+    color: #a52a2a;
+    padding: 1%;
+    margin: 1%;
+    font-size: 0.8rem;
+    border-radius: 5%;
+}
+
+/* Block with one project */
+.one-project {
+  margin-bottom: 20px;
+}
+
+.one-project h3 {
+  text-transform: uppercase;
+}
+
+.one-project a, a:active {
+  color: #FFF;
+  font-size: 1.4rem;
+  padding: 2%;
+}
+
+.one-project a:hover {
+  color: #000;
+}
+
+
+
+
+
+.nav-item {
+    font-size: 1.1rem;
+}
+
+.nav-item a {
+    color: #000;
+}
+
+.nav-item a:hover,
+.nav-item a:active {
+    color: #a52a2a;
+}
+
+
+
+/* Media Queries */
+/* For large phones */
+@media only screen and (min-width: 576px) {
+    
+}
+
+
+/* For tablets */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* For desks */
+@media only screen and (min-width: 992px) {
+    
+}
