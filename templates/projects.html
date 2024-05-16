@@ -1,4 +1,7 @@
-{% load static %} {% block content %}
+{% load static %} 
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/services-projects.css' %}" />
+{% endblock %}
 
 <section id="projects-section">
   <div class="container">
@@ -224,4 +227,3 @@
   </div>
 </section>
 
-{% endblock %}
