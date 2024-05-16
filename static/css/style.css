@@ -13,12 +13,13 @@ img {
     background-color: #a52a2a;
 }
 
-section, article {
+section {
     overflow: hidden;
 }
 
-.texte-block {
-    padding: 3%;
+article {
+  overflow: hidden;
+  padding: 3%;
 }
 
 .separator-red {
@@ -138,8 +139,50 @@ a:active {
 .projects-block {
     background-color: #FFF;
     color: #a52a2a;
-    padding: 2%;
-    margin: 2%;
+    padding: 1%;
+    margin: 1%;
+    font-size: 0.8rem;
+    border-radius: 5%;
+}
+
+.one-project {
+  margin-bottom: 20px;
+}
+
+.one-project h3 {
+  text-transform: uppercase;
+}
+
+.one-project a, a:active {
+  color: #FFF;
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 1.4rem;
+  padding: 2%;
+}
+
+.one-project a:hover {
+  color: #000;
+}
+
+#timeline {
+  border-left: 0.2rem solid #a52a2a;
+  height: max-content;
+}
+
+.timeline-point ul {
+  color: #a52a2a;
+}
+
+.timeline-point li {
+  padding: 1%;
+  color: #000;
+  list-style-position: outside;
+  list-style: circle;
+}
+.timeline-point p {
+  padding: 3%;
 }
 
 #menu-homepage {
