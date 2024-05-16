@@ -1,78 +1,125 @@
-{% extends "base.html" %}
-{% load static %}
-
-{% block content %}
+{% extends "base.html" %} {% load static %} {% block content %}
 
 <!-- First section with picture and tagline -->
 <section id="title-section">
-    <div id="title-image">
-        <img src="https://res.cloudinary.com/di8utbjhc/image/upload/v1686303474/portfolio/bunker-holga_grzjfh.webp"
-            alt="Bunker photo" class="center img-fluid">
+  <div id="title-image">
+    <img
+      src="https://res.cloudinary.com/di8utbjhc/image/upload/v1686303474/portfolio/bunker-holga_grzjfh.webp"
+      alt="Bunker photo"
+      class="center img-fluid"
+    />
+  </div>
+  <div id="title-block">
+    <div>
+      <h1>
+        WEB projects<br />
+        <span class="title-handwritten">management</span>
+      </h1>
     </div>
-    <div id="title-block">
-        <div class="texte-block">
-            <h1>WEB projects<br>
-                <span class="title-handwritten">management</span>
-            </h1>
-        </div>
-    </div>
+  </div>
 </section>
 
-<!-- Section with Skills -->
-<section>
-    <div class="texte-block">
+<!-- Section with Introduction about my work and services -->
+<article>
+    <div>
         <div class="col-12 animation">
-            <h2 class="logo-txt">
-                <div class="message">
-                    <div class="word1 title-handwritten">accompagner</div>
-                    <div class="word2 title-handwritten">guider</div>
-                    <div class="word3 title-handwritten">conseiller</div>
-                </div>
-                <span>les projets bienveillants</span>
-            </h2>
-        </div>
-        <p>Passionnée par le web depuis plus d'une décennie, j'ai consacré de nombreuses heures à des projets en ligne. Mes débuts n'ont pas été parfaits, mais en tant qu'autodidacte, j'ai dû acquérir les compétences fondamentales. Avec l'aide du CMS Wordpress, j'ai pu concrétiser mes idées et réaliser mes premiers projets digitaux. La formation de Développeur Full Stack proposée par Code Institute que j’ai finalisée en 2023  a ouvert de nouveaux horizons à mes ambitions web, donnant à ma créativité une liberté totale.</p>
-        <div>
-            <div class="col-12 block-red" id="menu-homepage">
-                <p class="text-center">
-                    <a href="#" onclick="showServices(event)" class="section-links">
-                        <span class="title-handwritten">mes</span>
-                        <span> SERVICES</span>
-                    </a> |
-                    <a href="#" onclick="showProjects(event)" class="section-links">
-                        <span class="title-handwritten">mes</span>
-                        <span> EXPERTISES</span>
-                    </a>
-                </p>
+        <h2 class="logo-txt">
+            <!-- 
+            <div class="message">
+            <div class="word1 title-handwritten">accompagner</div>
+            <div class="word2 title-handwritten">guider</div>
+            <div class="word3 title-handwritten">conseiller</div>
             </div>
+            <span>les projets bienveillants</span>-->
+        </h2>
+    </div>
+    <div>
+        <p>
+            Passionnée par le web depuis plus d'une décennie, j'ai consacré de nombreuses heures à des projets en ligne. Mes débuts n'ont pas été parfaits, mais en tant qu'autodidacte, j'ai dû acquérir les compétences fondamentales et je sais désormais ce qui fonctionne et ce qui ne fonctionne pas ! Avec l'aide du CMS Wordpress, j'ai pu concrétiser mes idées et réaliser mes premiers projets digitaux. Ma formation de Développeur Full Stack a ouvert de nouveaux horizons à mes ambitions digitales, donnant à ma créativité une liberté totale !
+        </p>
+    </div>
+    </div>
+</article>
+
+<!-- Section with my experience and services with timeline -->
+<article>
+    </div>
+        <h3>
+            Pourquoi réaliser un site internet pour votre activité ? Pourquoi faire appel à mes services ?
+        </h3>
+        <p>
+            Réaliser un site internet demande des compétences, à la fois techniques mais aussi de communication. Il est toujours facile de créer un site sur des plateformes “toutes-faites” mais encore faut-il choisir la bonne solution et surtout agencer correctement ses informations. J’ai travaillé pendant presque 10 ans dans la communication et je sais comment valoriser les projets qui tiennent à cœur en :
+        </p>
+    </div>
+    <div id="timeline">
+        <div class="timeline-point">
+            <ul>
+                <li>
+                    <p>Élaborant une <strong>stratégie digitale</strong> est indispensable pour créer un site internet qui réponde parfaitement à vos besoins.
+                </li>
+                <li>
+                    <p>Concevant un site web consiste à traduire vos désirs et vos exigences en une <strong>architecture technique et design appropriée</strong>.</p>
+                </li>
+                <li>
+                    <p>Créant une interface à la fois pratique et fidèle à votre identité visuelle, <strong>adaptée à tous les types d'écrans</strong>, en particulier aux smartphones qui représentent désormais plus de la moitié des connexions mondiales.</p>
+                </li>
+                <li>
+                    <p>Donnant de la visibilité à votre travail avec les différents <strong>outils de référencement SEO</strong>.</p>
+                </li>
+                <li>
+                    <p>Soutenant votre travail et vos valeurs avec un <strong>contenu à la fois optimisé et percutant</strong>, mêlant textes et visuels de qualité pour atteindre au mieux votre audience cible.</p>
+                </li>
+                <li>
+                    <p>Conseillant sur une façon de communiquer sur votre site internet et sur vos réseaux sociaux. Cette approche est indispensable pour <strong>développer une communauté en ligne et la fidéliser sur le long terme</strong>.</p>
+                </li>              
+            </ul>
         </div>
     </div>
+</article>
+
+<!-- Menu with Services and Projects -->
+<section>
+    <div>
+      <div class="col-12 block-red" id="menu-homepage">
+        <p class="text-center">
+          <a href="#" onclick="showServices(event)" class="section-links">
+            <span class="title-handwritten">mes</span>
+            <span> SERVICES</span>
+          </a>
+          |
+          <a href="#" onclick="showProjects(event)" class="section-links">
+            <span class="title-handwritten">mes</span>
+            <span> EXPERTISES</span>
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="services-content">
+    <!-- Services content displays by default -->
+    {% include 'services.html' %}
+  </div>
+  <div id="projects-content" style="display: none">
+    <!-- Projects page content displays if the link is selected -->
+    {% include 'projects.html' %}
+  </div>
 </section>
 
-<section>
-    <div id="services-content">
-        <!-- Services content displays by default -->
-        {% include 'services.html' %}
-    </div>
-    
-    <div id="projects-content" style="display: none;">
-        <!-- Projects page content displays if the link is selected -->
-        {% include 'projects.html' %}
-    </div>
-</section>
+<!-- About me section -->
+<article>
+  <div id="about-content">
+    <!-- About page content -->
+    {% include 'about.html' %}
+  </div>
+</article>
 
 <section>
-    <div id="about-content">
-        <!-- About page content -->
-        {% include 'about.html' %}
-    </div>
-</section>
-
-<section>
-    <img src="https://res.cloudinary.com/di8utbjhc/image/upload/v1701627087/personal-website/beach_dao6gf.webp" alt="picture of a beach in Normandy with Holga">
-    <!-- Contact page content -->
-    {% include 'contact.html' %}
+  <img
+    src="https://res.cloudinary.com/di8utbjhc/image/upload/v1701627087/personal-website/beach_dao6gf.webp"
+    alt="picture of a beach in Normandy with Holga"
+  />
+  <!-- Contact page content -->
+  {% include 'contact.html' %}
 </section>
 
 {% endblock %}
-
