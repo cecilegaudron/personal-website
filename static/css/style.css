@@ -89,10 +89,6 @@ a:active {
     position: relative;
 }
 
-#title-image img {
-    height: 65vh;
-}
-
 #title-section {
     max-width: 100% !important;
     padding: 0 !important;
@@ -107,23 +103,48 @@ a:active {
 }
 
 /* Timeline */
-#timeline {
+.timeline-container {
   border-left: 0.2rem solid #a52a2a;
   height: max-content;
+  position: relative;
 }
 
-.timeline-point ul {
+.timeline-circle {
   color: #a52a2a;
+  margin: 0%;
+  padding: 0%;
 }
 
-.timeline-point li {
-  padding: 1%;
-  color: #000;
-  list-style-position: outside;
-  list-style: circle;
+.timeline-span {
+  margin: 0%;
+  padding: 0%
 }
-.timeline-point p {
-  padding: 3%;
+
+.timeline-inline {
+  display: inline-block;
+}
+
+.ml-n2 {
+  margin-left: -0.7rem !important;
+}
+
+.timeline {
+  list-style-type: none;
+  position: relative;
+}
+
+.timeline li {
+  display: flex; /* align the circle and the text in a row */
+  align-items: flex-start; /* align the circle and the text to the top */
+  margin-bottom: 1rem; /* space between list items */
+}
+
+.timeline li i {
+  margin-right: 1rem; /* space between the circle and the text */
+}
+
+.timeline li span {
+  padding: 0.5rem; /* padding around the text */
 }
 
 /* Contact form */
