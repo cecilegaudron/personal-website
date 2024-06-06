@@ -1,50 +1,54 @@
 {% block content %}
 <section id="contact-form">
   <div class="container">
-    <div id="title-block texte-block bottom-0 end-0">
-      <h2 class="text-dark">Contact
+    <div class="bottom-0 end-0 row">
+      <div class="col-12 col-md-6 pt-2 mt-2 my-auto">
+        <h2 class="text-dark">
+          Contact
           <span class="title-handwritten">me</span>
-      </h2>
+        </h2>
+      </div>
+      <div class="col-12 col-md-7 mx-auto pt-2 my-auto">
+        <p>
+          It's important to have <strong>confidence in the person</strong> to
+          whom you entrust the creation of your website. To do this, feel free
+          to contact me we can make an appointment, meet or set up a telephone
+          or video interview to get to know each other. You can then tell me
+          more about your project and I can see how I can help you make it a
+          success. <br /><br/>
+          I'd be delighted to
+          <strong>discuss your project with you</strong>. I'll be happy to put
+          forward my ideas, integrating your wishes and vision.
+        </p>
+      </div>
+      <div class="contact-form-block col-11 col-md-5 mx-auto p-3 m-2">
+        <p>Contact me via this form:</p>
+        <div class="mb-3">
+          <label for="input-name" class="form-label">Your name</label>
+          <input type="name" class="form-control" id="input-name" required />
+        </div>
+        <div class="mb-3">
+          <label for="input-email" class="form-label">Your email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="input-email"
+            placeholder="name@example.com"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="input-message" class="form-label" required
+            >Your message</label
+          >
+          <textarea class="form-control" id="input-message" rows="3"></textarea>
+        </div>
+        <button type="button" class="btn mx-auto">
+          <strong>Send your message</strong>
+        </button>
+        <p>Faire une page de email successful sent</p>
+      </div>
     </div>
-    <p>
-      It's important to have <strong>confidence in the person</strong> to whom
-      you entrust the creation of your website. To do this, feel free to contact
-      me we can make an appointment, meet or set up a telephone or video
-      interview to get to know each other. You can then tell me more about your
-      project and I can see how I can help you make it a success.
-    <br>I'd be delighted to <strong>discuss your project with you</strong>. I'll be happy to put forward my ideas,
-        integrating your wishes and vision.
-    </p>
-    <p>Contact me via this form:</p>
-    <div class="mb-3">
-      <label for="input-name" class="form-label">Your name</label>
-      <input
-        type="name"
-        class="form-control"
-        id="input-name"
-        required
-      />
-    </div>
-    <div class="mb-3">
-      <label for="input-email" class="form-label">Your email address</label>
-      <input
-        type="email"
-        class="form-control"
-        id="input-email"
-        placeholder="name@example.com"
-        required
-      />
-    </div>
-    <div class="mb-3">
-      <label for="input-message" class="form-label" required
-        >Your message</label
-      >
-      <textarea class="form-control" id="input-message" rows="3"></textarea>
-    </div>
-    <button type="button" class="btn mx-auto">
-      <strong>Send your message</strong>
-    </button>
-    <p>Faire une page de email successful sent</p>
   </div>
 </section>
 
