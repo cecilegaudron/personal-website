@@ -94,17 +94,17 @@
 <section>
     <div>
       <div class="col-12 block-red" id="menu-homepage">
-        <p class="text-center">
+        <h3 class="text-center">
           <a href="#" onclick="showServices(event)" class="section-links">
             <span class="title-handwritten">mes</span>
-            <span> SERVICES</span>
+            <span> Services</span>
           </a>
           |
           <a href="#" onclick="showProjects(event)" class="section-links">
             <span class="title-handwritten">mes</span>
-            <span> PROJETS</span>
+            <span> Projets</span>
           </a>
-        </p>
+        </h3>
       </div>
     </div>
   </div>
@@ -119,18 +119,12 @@
 </section>
 
 <!-- About me section -->
-<article>
-  <div id="about-content">
+<section>
     <!-- About page content -->
     {% include 'about.html' %}
-  </div>
-</article>
+</section>
 
 <section>
-  <img
-    src="https://res.cloudinary.com/di8utbjhc/image/upload/v1701627087/personal-website/beach_dao6gf.webp"
-    alt="picture of a beach in Normandy with Holga"
-  />
   <!-- Contact page content -->
   {% include 'contact.html' %}
 </section>

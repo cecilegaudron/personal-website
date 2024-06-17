@@ -3,15 +3,20 @@
 {% block content %}
 
 <!-- ABOUT section -->
-<article id="about-section" class="mt-5">
-    <div id="title-section" class="container-fluid">
-        <div class="row bottom-0 end-0 row">
-            <div id="title-image col-12">
-                <img src="https://res.cloudinary.com/di8utbjhc/image/upload/v1686303474/portfolio/swing_tumfwg.webp"
-                    alt="Me on a swing photo" class="center img-fluid">
-            </div>
-            <div id="title-block col-12">
-                <h2 class="text-dark">About
+
+<div class="mt-5">
+    <div class="d-block d-md-none" id="title-image">
+        <!-- Mobile Image -->
+        <img src="https://res.cloudinary.com/di8utbjhc/image/upload/v1686303474/portfolio/swing_tumfwg.webp"
+            alt="Me on a swing photo" class="img-fluid">
+    </div>
+    <div id="title-section" class="container">
+        <div class="row bottom-0 end-0 w-100">
+            
+            <!-- Widescreen Image Container -->
+            <div class="col-12 d-none d-md-block image-container"></div>
+            <div class="section-block mx-auto">
+                <h2 class="text-dark mx-auto">About
                     <span class="title-handwritten">me</span>
                 </h2>
             </div>
@@ -20,7 +25,9 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-7 mx-auto pt-2 my-auto">
-                <p>I have been working on web projects for more than fifteen years now. First of all in a self-taught way with sites
+                <p>Me concernant
+                    à propos de moi
+                    I have been working on web projects for more than fifteen years now. First of all in a self-taught way with sites
                     a little shaky and not always successful. This time did not last, because I obtained a diploma of multimedia
                     infographist which allowed me to learn and understand the fundamentals. Some time later, the discovery of
                     Wordpress lost me to take a new flight and create more successful websites.
@@ -35,6 +42,16 @@
             </div>
         </div>
     </div>
-</article>
+    <div class="col-12 col-md-5 mx-auto">
+        <h3 class="title-handwritten">Mes domaines de prédilection</h3>
+        <p>
+            La culture (j’ai travaillé en bibliothèque, j’ai organisé des concerts et des expositions, j’ai optimisé l’intégration d’un logiciel de billetterie à un site internet de collectivité), la santé (je suis passionnée d’alimentation, de naturopathie, de bien-être, de méditation), le mode associatif (j’ai été webmaster d’un fanzine de musiques actuelles durant 10 ans)
+        </p>
+        <p>
+            Vous êtes intéressés par plusieurs prestations et vous désirez me parler de votre projet ? Contactez-moi afin que je puisse évaluer vos besoins et que je puisse réaliser un devis approprié et personnalisé. 
+        </p>
+      </div>
+    </div>
+</div>
 
 {% endblock %}

@@ -10,14 +10,14 @@ footer {
     font-size: 1.4rem;
 }
 
-footer a {
+a.footer-link:link, a.footer-link:visited {
     color: #FFF;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: lighter;
 }
 
-footer a:hover {
+a.footer-link:hover, a.footer-link:active {
     color: #a52a2a;
     text-decoration: none;
 }

@@ -41,12 +41,20 @@ header {
     text-transform: uppercase;
     font-size: 1.4rem;
     text-decoration: none;
-    align-content: center;
 }
 
 li {
     list-style: none;
 }
+
+a.menu-mobile:link, a.menu-mobile:visited {
+    color: #000;
+}
+
+a.menu-mobile:hover, a.menu-mobile:active {
+    color: #a52a2a;
+}
+
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {

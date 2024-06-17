@@ -1,13 +1,24 @@
 {% block content %}
-<section id="contact-form">
-  <div class="container">
+<div class="mt-5">
+  <div class="d-block d-md-none" id="title-image">
+    <!-- Mobile Image -->
+    <img
+    src="https://res.cloudinary.com/di8utbjhc/image/upload/v1701627087/personal-website/beach_dao6gf.webp"
+    alt="picture of a beach in Normandy with Holga"
+  />
+  </div>
+  <div id="title-section" class="container">
+    <div class="texte-block bottom-0 end-0">
+        <!-- Widescreen Image Container -->
+        <div class="col-12 d-none d-md-block image-container"></div>
+            <h2 class="text-dark">About
+                <span class="title-handwritten">me</span>
+            </h2>
+        </div>
+    </div>
+  </div>
+  <div id="contact-form" class="container">
     <div class="bottom-0 end-0 row">
-      <div class="col-12 col-md-6 pt-2 mt-2 my-auto">
-        <h2 class="text-dark">
-          Contact
-          <span class="title-handwritten">me</span>
-        </h2>
-      </div>
       <div class="col-12 col-md-7 mx-auto pt-2 my-auto">
         <p>
           It's important to have <strong>confidence in the person</strong> to
@@ -50,6 +61,5 @@
       </div>
     </div>
   </div>
-</section>
 
 {% endblock %}
