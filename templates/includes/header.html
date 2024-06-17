@@ -5,47 +5,50 @@
 {% endblock %}
 
 <header>
-    <div class="container w-100">
-        <!-- Logo -->
-        <nav class="navbar navbar-dark sticky-top" id="menu">
-            <div class="col-10">
-                <a href="{% url 'index' %}">
-                    <div>
-                        <img class="logo img-fluid mx-auto bg-white col-6" alt="CÉcile Gaudron logo"
+    <!-- Logo -->
+    <nav class="navbar navbar-dark sticky-top">
+        <div class="container w-100">
+            <div class="row d-flex align-items-center">
+                <div class="col-5">
+                    <a href="{% url 'index' %}">
+                        <img class="logo img-fluid mx-auto" alt="CÉcile Gaudron logo"
                             src="https://res.cloudinary.com/di8utbjhc/image/upload/v1715869908/personal-website/r7sisxvd52agndkef2qn.png">
-                    </div>
-                    <div>
-                        <p class="logo-txt col-10"><i class="fa-solid fa-code"></i> Full Stack Developer</p>
-                    </div>
-                </a>
+                    </a>
+                </div>
+                <div class="col-7 text-right">
+                    <p class="logo-txt"> <span class="logo-icon">< > </span> Cécile Gaudron<br>
+                        Full Stack Developer <i class="fa-solid fa-code"></i></p>
+                </div>
             </div>
             <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler col-2" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <i class="fa-solid fa-bars-staggered text-dark" id="bars"></i>
-            </button>
+            <div class="col-12 ">
+                <button class="navbar-toggler col-2" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <i class="fa-solid fa-bars-staggered text-dark" id="bars"></i>
+                </button>
+            </div>
             <!-- Navbar links in collapse menu -->
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul>
-                <li>
-                    <a href="{% url 'index' %}" class="menu-mobile"><i class="fa-solid fa-house-chimney"></i></a>
-                </li>
-                <li>
-                    <a href="{% url 'index' %}#about-section" class="menu-mobile">ABOUT</a>
-                </li>
-                <li>
-                    <a href="{% url 'index' %}#contact" class="menu-mobile">CONTACT</a>
-                </li>
-                <li>
-                    <a href="#" class="menu-mobile small">English </a> | <a href="#" class="menu-mobile small">Français </a>
-                </li>
-                <li>
-                    <a href="#" class="menu-mobile"><i class="fa-brands fa-square-github"></i> </a> 
-                </li>
-                <li>
-                    <a href="#" class="menu-mobile"><i class="fa-brands fa-linkedin"></i> </a>
-                </li>
-            </ul>
+                <ul>
+                    <li>
+                        <a href="{% url 'index' %}" class="menu-mobile"><i class="fa-solid fa-house-chimney"></i></a>
+                    </li>
+                    <li>
+                        <a href="{% url 'index' %}#about-section" class="menu-mobile">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'index' %}#contact" class="menu-mobile">CONTACT</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-mobile small">English </a> | <a href="#" class="menu-mobile small">Français </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-mobile"><i class="fa-brands fa-square-github"></i> </a> 
+                    </li>
+                    <li>
+                        <a href="#" class="menu-mobile"><i class="fa-brands fa-linkedin"></i> </a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </div>
-  </header>
+        </div>
+    </nav>
+</header>

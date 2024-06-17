@@ -14,14 +14,25 @@ header {
     z-index: 9999;
 }
 
+.navbar {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
 /* Logo and text */
 .logo-txt {
     font-family: 'Fjalla One', sans-serif;
     font-size: 1.3rem;
+    color: #a52a2a;
+}
+
+.logo-icon {
+    font-size: 2rem;
 }
 
 .logo {
-    width: 80%;
+    width: 100%;
+    background-color: #FFF;
 }
 
 /* Dropdown menu */
@@ -48,3 +59,19 @@ li {
 .sticky+.content {
     padding-top: 60px;
 }
+
+/* Media queries */
+@media (min-width: 768px) { /* Adjust this breakpoint as needed */
+    .logo {
+        width: auto;
+        height: 20vh; /* Adjust the height as needed to crop the image */
+    }
+  }
+
+
+@media (min-width: 992px) { /* Adjust this breakpoint as needed */
+    .logo {
+        width: auto;
+        height: 30vh; /* Adjust the height as needed to crop the image */
+    }
+  }
