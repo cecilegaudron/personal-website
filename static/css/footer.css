@@ -1,5 +1,5 @@
 footer {
-    background-color: black;
+    background-color: var(--primary-color);
     max-width: 100%;
     color: #fff;
     overflow: hidden;
@@ -18,7 +18,7 @@ a.footer-link:link, a.footer-link:visited {
 }
 
 a.footer-link:hover, a.footer-link:active {
-    color: #a52a2a;
+    color: var(--secondary-color);
     text-decoration: none;
 }
 

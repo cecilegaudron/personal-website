@@ -23,7 +23,7 @@ header {
 .logo-txt {
     font-family: 'Fjalla One', sans-serif;
     font-size: 1.3rem;
-    color: #a52a2a;
+    color: var(--secondary-color);
 }
 
 .logo-icon {
@@ -43,16 +43,26 @@ header {
     text-decoration: none;
 }
 
+#bars {
+    color: var(--primary-color);
+    font-size: 2rem;
+    transition-duration: 0.4s;
+}
+
+#bars:hover {
+    color: var(--secondary-color);
+}
+
 li {
     list-style: none;
 }
 
 a.menu-mobile:link, a.menu-mobile:visited {
-    color: #000;
+    color: var(--primary-color);
 }
 
 a.menu-mobile:hover, a.menu-mobile:active {
-    color: #a52a2a;
+    color: var(--secondary-color);
 }
 
 

@@ -14,7 +14,7 @@ a.section-links:link, a.section-links:visited {
 }
 
 a.section-links:hover, a.section-links:active {
-  color: #000;
+  color: var(--primary-color);
   text-decoration: none;
   font-size: 2rem;
 }
@@ -33,7 +33,7 @@ a.section-links:hover, a.section-links:active {
 /* PROJECTS PAGE */
 .projects-block {
     background-color: #FFF;
-    color: #a52a2a;
+    color: var(--secondary-color);
     padding: 1%;
     margin: 1%;
     font-size: 0.8rem;
@@ -56,26 +56,21 @@ a.section-links:hover, a.section-links:active {
 }
 
 .one-project a:hover {
-  color: #000;
+  color: var(--primary-color);
 }
-
-
-
-
 
 .nav-item {
     font-size: 1.1rem;
 }
 
 .nav-item a {
-    color: #000;
+    color: var(--primary-color);
 }
 
 .nav-item a:hover,
 .nav-item a:active {
-    color: #a52a2a;
+    color: var(--secondary-color);
 }
-
 
 
 /* Media Queries */
@@ -83,7 +78,6 @@ a.section-links:hover, a.section-links:active {
 @media only screen and (min-width: 576px) {
     
 }
-
 
 /* For tablets */
 @media only screen and (min-width: 768px) {

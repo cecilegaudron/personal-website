@@ -7,34 +7,35 @@
     padding: 0;
 }
 
+:root {
+  --primary-color: #212529;
+  --secondary-color: #a52a2a;
+}
+
 img {
     width: 100%;
     height: auto;
-    background-color: #a52a2a;
+    background-color: var(--secondary-color);
 }
 
-section {
+section, article {
     overflow: hidden;
 }
 
-article {
-  overflow: hidden;
-  padding: 3%;
-}
-
 .btn {
-    background-color: #a52a2a;
+    background-color: var(--secondary-color);
     color: #FFF;
 }
 
 .btn:hover {
-    background-color: #000;
+    background-color: var(--primary-color);
     color: #FFF;
 }
 /* Text styles */
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
+    color: var(--primary-color);
 }
 
 h1 {
@@ -56,7 +57,7 @@ h2, h3 {
 
 .title-handwritten h1 {
     font-size: 3rem !important;
-    color: #fff;
+    color: #FFF;
 }
 
 .title-handwritten h2 {
@@ -65,19 +66,19 @@ h2, h3 {
 
 /* Links styles */
 a, a:visited {
-    color: #a52a2a;
+    color: var(--secondary-color);
     font-weight: bold;
 }
 
 a:hover,
 a:active {
-    color: #000;
+    color: var(--primary-color);
     text-decoration: none;
 }
 
 /* Website titles and image */
 #title-block {
-    background-color: #a52a2a;
+    background-color: var(--secondary-color);
     color: #FFF;
     text-align: right;
     padding: 2%
@@ -96,20 +97,20 @@ a:active {
 
 /* Block with red color */
 .block-red {
-    background-color: #a52a2a;
+    background-color: var(--secondary-color);
     color: #FFF;
     display: inline-block;
 }
 
 /* Timeline */
 .timeline-container {
-  border-left: 0.2rem solid #a52a2a;
+  border-left: 0.2rem solid var(--secondary-color);
   height: max-content;
   position: relative;
 }
 
 .timeline-circle {
-  color: #a52a2a;
+  color: var(--secondary-color);
   margin: 0%;
   padding: 0%;
 }
@@ -148,8 +149,8 @@ a:active {
 
 /* Contact form */
 .contact-form {
-    background-color: #a52a2a;
-    color: #fff;
+    background-color: var(--secondary-color);
+    color: #FFF;
     line-height: 2;
     overflow: hidden;
     max-width: 100%;
@@ -157,12 +158,12 @@ a:active {
 }
 
 .form-control:focus {
-    border-color: #a52a2a;
+    border-color: var(--secondary-color);
     box-shadow: inset 0 1px 1px rgba(165, 42, 42, 0.075), 0 0 8px rgba(165, 42, 42, 0.6);
 }
 
 .contact-form-block {
-  border: #a52a2a 0.1rem solid;
+  border: var(--secondary-color) 0.1rem solid;
   border-radius: 5%;
 }
 
@@ -172,7 +173,7 @@ a:active {
   }
   
   .message {
-    background-color: #a52a2a;
+    background-color: var(--secondary-color);
     color: #FFF;
     display: block;
     font-weight: 900;
@@ -256,5 +257,6 @@ a:active {
     background-image: url('https://res.cloudinary.com/di8utbjhc/image/upload/v1686303474/portfolio/swing_tumfwg.webp');
     background-size: cover; /* Cover the container without losing aspect ratio */
     background-position: center; /* Center the background image */
+    background-color: var(--secondary-color);
   }
 }
