@@ -18,6 +18,10 @@ img {
     background-color: var(--secondary-color);
 }
 
+.img-fluid {
+  background-color: var(--secondary-color);
+}
+
 section, article {
     overflow: hidden;
 }
@@ -62,6 +66,19 @@ h2, h3 {
 
 .title-handwritten h2 {
     font-size: 2rem !important;
+}
+
+.intertitle {
+  color: var(--secondary-color);
+}
+
+.predilection-title {
+  color: var(--secondary-color);
+  display: inline;
+}
+
+.predilection-text {
+  display: block;
 }
 
 /* Links styles */
@@ -111,7 +128,6 @@ a:active {
 
 .timeline-circle {
   color: var(--secondary-color);
-  margin: 0%;
   padding: 0%;
 }
 
@@ -145,6 +161,10 @@ a:active {
 
 .timeline li span {
   padding: 0.5rem; /* padding around the text */
+}
+
+.timeline-predilection li {
+  display: inline;
 }
 
 /* Contact form */
@@ -243,9 +263,8 @@ a:active {
     }
   }
 
-
+/* Mobile and small screens: Show image using img tag for simplicity */
 .image-container {
-  /* Mobile and small screens: Show image using img tag for simplicity */
    display: none;
 }
   
