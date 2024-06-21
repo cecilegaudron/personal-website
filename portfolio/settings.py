@@ -47,7 +47,12 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     "django.contrib.staticfiles",
     'cloudinary',
+    'contact',
+    'crispy_forms',
+    'crispy_bootstrap4',
 ]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
